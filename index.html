@@ -10,8 +10,8 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #181818;
-            color: #ffffff;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
         }
@@ -21,30 +21,43 @@
             padding: 20px;
         }
         header {
-            background: #1e1e1e;
+            background: #007bff;
             padding: 20px;
-            text-align: center;
+            text-align: left;
             font-size: 24px;
-            border-bottom: 3px solid #00aaff;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid white;
         }
         nav {
             text-align: center;
             margin-top: 10px;
         }
         nav a {
-            color: #00aaff;
+            color: #007bff;
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
         }
         section {
             padding: 20px;
-            background: #222;
+            background: white;
             margin: 10px 0;
             border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-in-out forwards;
         }
         h2 {
-            color: #00aaff;
+            color: #007bff;
         }
         ul {
             list-style-type: none;
@@ -54,7 +67,7 @@
             margin-bottom: 10px;
         }
         a {
-            color: #ffaa00;
+            color: #ff6600;
             text-decoration: none;
         }
         a:hover {
@@ -63,33 +76,15 @@
         footer {
             text-align: center;
             padding: 10px;
-            background: #1e1e1e;
-            color: #00aaff;
+            background: #007bff;
+            color: white;
             margin-top: 20px;
         }
-        .profile-pic {
-            display: block;
-            margin: 20px auto;
-            width: 200px;
-            border-radius: 50%;
-        }
-        .expert-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .expert-card {
-            background: #333;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-            text-align: center;
-            width: 250px;
-        }
-        .expert-card img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -97,7 +92,7 @@
 
 <header>
     <h1>Dr. Kwabena Kingsley Kumah</h1>
-    <p>Postdoctoral Research Scholar | Remote Sensing & Machine Learning</p>
+    <img src="image.png" alt="Dr. Kwabena Kingsley Kumah" class="profile-pic">
 </header>
 
 <nav>
@@ -112,8 +107,7 @@
 <div class="container">
     <section id="about">
         <h2>About Me</h2>
-        <img src="image.png" alt="Dr. Kwabena Kingsley Kumah" class="profile-pic">
-        <p>I specialize in remote sensing, GIS, geospatial modeling, and spatiotemporal data analysis, with demonstrated expertise in global precipitation detection, estimation, and mapping.</p>
+        <p>I specialize in remote sensing, GIS, geospatial modeling, and spatiotemporal data analysis, with expertise in global precipitation detection, estimation, and mapping.</p>
         <p><strong>Currently:</strong></p>
         <ul>
             <li>Developing an AVHRR-based global precipitation mapping algorithm for NASA’s GPCP project.</li>
@@ -132,37 +126,14 @@
         </ul>
     </section>
 
-    <section id="publications">
-        <h2>Selected Publications</h2>
-        <ul>
-            <li><a href="https://doi.org/10.1016/j.atmosres.2022.106357" target="_blank">Near real-time estimation of high spatiotemporal resolution rainfall</a></li>
-            <li><a href="https://doi.org/10.3390/rs13163274" target="_blank">Improving Microwave Link Rainfall Estimation</a></li>
-        </ul>
-    </section>
-
-    <section id="media">
-        <h2>Media Coverage</h2>
-        <ul>
-            <li><a href="https://physics.aps.org/articles/v14/161" target="_blank">Mobile Phone Signals Hold Real-Time Rainfall Information</a></li>
-        </ul>
-    </section>
-
     <section id="experts">
         <h2>International Experts I Have Worked With</h2>
-        <div class="expert-grid">
-            <div class="expert-card">
-                <img src="expert1.jpg" alt="Bob Su">
-                <h3>Prof. Bob Su</h3>
-                <p>University of Twente</p>
-                <a href="https://research.utwente.nl/en/persons/bob-su" target="_blank">View Profile</a>
-            </div>
-            <div class="expert-card">
-                <img src="expert2.jpg" alt="Ali Behrangi">
-                <h3>Prof. Ali Behrangi</h3>
-                <p>University of Arizona</p>
-                <a href="https://has.arizona.edu/person/ali-behrangi" target="_blank">View Profile</a>
-            </div>
-        </div>
+        <ul>
+            <li><a href="https://research.utwente.nl/en/persons/bob-su">Prof. Bob Su - Hydrology - University of Twente</a></li>
+            <li><a href="https://research.utwente.nl/en/persons/ben-maathuis">Dr. Ben Maathuis - Remote Sensing - University of Twente</a></li>
+            <li><a href="https://has.arizona.edu/person/ali-behrangi">Prof. Ali Behrangi - Climate Science - University of Arizona</a></li>
+            <li><a href="https://www.tudelft.nl/staff/r.uijlenhoet/">Prof. Remko Uijlenhoet - Hydrology - TU Delft</a></li>
+        </ul>
     </section>
 
     <section id="contact">
@@ -171,7 +142,7 @@
         <p>The University of Arizona, Hydrology & Atmospheric Sciences, JW Harshbarger Building, RM 316D</p>
         <p><strong>Work Email:</strong> <a href="mailto:kkumah@arizona.edu">kkumah@arizona.edu</a></p>
         <p><strong>Personal Email:</strong> <a href="mailto:kkumahkwabena@gmail.com">kkumahkwabena@gmail.com</a></p>
-        <p><strong>ORCID:</strong> <a href="https://orcid.org/my-orcid?orcid=0000-0001-6865-0665" target="_blank">0000-0001-6865-0665</a></p>
+        <p><strong>ORCID:</strong> <a href="https://orcid.org/my-orcid?orcid=0000-0001-6865-0665">0000-0001-6865-0665</a></p>
     </section>
 </div>
 
