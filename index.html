@@ -9,9 +9,9 @@
     <meta name="author" content="Kwabena Kingsley Kumah">
     <style>
         body {
-            font-family: 'Courier New', monospace;
-            background-color: #121212;
-            color: #00ffcc;
+            font-family: 'Arial', sans-serif;
+            background-color: #181818;
+            color: #ffffff;
             margin: 0;
             padding: 0;
         }
@@ -25,26 +25,26 @@
             padding: 20px;
             text-align: center;
             font-size: 24px;
-            border-bottom: 3px solid #00ffcc;
+            border-bottom: 3px solid #00aaff;
         }
         nav {
             text-align: center;
             margin-top: 10px;
         }
         nav a {
-            color: #00ffcc;
+            color: #00aaff;
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
         }
         section {
             padding: 20px;
-            background: #1a1a1a;
+            background: #222;
             margin: 10px 0;
             border-radius: 5px;
         }
         h2 {
-            color: #00ffcc;
+            color: #00aaff;
         }
         ul {
             list-style-type: none;
@@ -54,7 +54,7 @@
             margin-bottom: 10px;
         }
         a {
-            color: #ffcc00;
+            color: #ffaa00;
             text-decoration: none;
         }
         a:hover {
@@ -64,8 +64,32 @@
             text-align: center;
             padding: 10px;
             background: #1e1e1e;
-            color: #00ffcc;
+            color: #00aaff;
             margin-top: 20px;
+        }
+        .profile-pic {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+            border-radius: 50%;
+        }
+        .expert-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .expert-card {
+            background: #333;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 250px;
+        }
+        .expert-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -73,7 +97,7 @@
 
 <header>
     <h1>Dr. Kwabena Kingsley Kumah</h1>
-    <p>Postdoctoral Research Scholar | Remote Sensing & Machine Learning Enthusiast</p>
+    <p>Postdoctoral Research Scholar | Remote Sensing & Machine Learning</p>
 </header>
 
 <nav>
@@ -81,13 +105,21 @@
     <a href="#research">Research</a>
     <a href="#publications">Publications</a>
     <a href="#media">Media</a>
+    <a href="#experts">Experts</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a Postdoctoral Research Scholar at the University of Arizona, specializing in remote sensing-based precipitation retrieval, machine learning applications in hydrology, and algorithm development.</p>
+        <img src="image.png" alt="Dr. Kwabena Kingsley Kumah" class="profile-pic">
+        <p>I specialize in remote sensing, GIS, geospatial modeling, and spatiotemporal data analysis, with demonstrated expertise in global precipitation detection, estimation, and mapping.</p>
+        <p><strong>Currently:</strong></p>
+        <ul>
+            <li>Developing an AVHRR-based global precipitation mapping algorithm for NASA’s GPCP project.</li>
+            <li>Building a weather application platform for sub-Saharan Africa.</li>
+        </ul>
+        <p><strong>Previously:</strong> Pioneered a machine learning-based precipitation mapping algorithm that blends satellite and telecom data.</p>
     </section>
 
     <section id="research">
@@ -103,26 +135,43 @@
     <section id="publications">
         <h2>Selected Publications</h2>
         <ul>
-            <li><a href="https://ui.adsabs.harvard.edu/abs/2023AGUFM.H23U.184Z" target="_blank">Developing a Novel Long-Term ML-based Precipitation Product from AVHRR in High Latitudes</a></li>
             <li><a href="https://doi.org/10.1016/j.atmosres.2022.106357" target="_blank">Near real-time estimation of high spatiotemporal resolution rainfall</a></li>
-            <li><a href="https://doi.org/10.3390/rs13163274" target="_blank">The MSG Technique: Improving Microwave Link Rainfall Estimation</a></li>
+            <li><a href="https://doi.org/10.3390/rs13163274" target="_blank">Improving Microwave Link Rainfall Estimation</a></li>
         </ul>
     </section>
 
     <section id="media">
         <h2>Media Coverage</h2>
         <ul>
-            <li><a href="https://www.itc.nl/news/2022/10/196298/itc-algorithm-detects-rainfall-in-rural-africa" target="_blank">ITC Algorithm Detects Rainfall in Rural Africa</a></li>
-            <li><a href="https://innovationorigins.com/en/selected/researcher-from-ut-developed-an-algorithm-to-predict-rainfall-in-rural-africa/" target="_blank">Innovation Origins: Predicting Rainfall in Rural Africa</a></li>
+            <li><a href="https://physics.aps.org/articles/v14/161" target="_blank">Mobile Phone Signals Hold Real-Time Rainfall Information</a></li>
         </ul>
+    </section>
+
+    <section id="experts">
+        <h2>International Experts I Have Worked With</h2>
+        <div class="expert-grid">
+            <div class="expert-card">
+                <img src="expert1.jpg" alt="Bob Su">
+                <h3>Prof. Bob Su</h3>
+                <p>University of Twente</p>
+                <a href="https://research.utwente.nl/en/persons/bob-su" target="_blank">View Profile</a>
+            </div>
+            <div class="expert-card">
+                <img src="expert2.jpg" alt="Ali Behrangi">
+                <h3>Prof. Ali Behrangi</h3>
+                <p>University of Arizona</p>
+                <a href="https://has.arizona.edu/person/ali-behrangi" target="_blank">View Profile</a>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:kkumah@arizona.edu">kkumah@arizona.edu</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/kkumah/" target="_blank">linkedin.com/in/kkumah</a></p>
-        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ&hl=en" target="_blank">View My Publications</a></p>
-        <p>ResearchGate: <a href="https://www.researchgate.net/profile/K-Kumah" target="_blank">ResearchGate Profile</a></p>
+        <p><strong>Office Address:</strong></p>
+        <p>The University of Arizona, Hydrology & Atmospheric Sciences, JW Harshbarger Building, RM 316D</p>
+        <p><strong>Work Email:</strong> <a href="mailto:kkumah@arizona.edu">kkumah@arizona.edu</a></p>
+        <p><strong>Personal Email:</strong> <a href="mailto:kkumahkwabena@gmail.com">kkumahkwabena@gmail.com</a></p>
+        <p><strong>ORCID:</strong> <a href="https://orcid.org/my-orcid?orcid=0000-0001-6865-0665" target="_blank">0000-0001-6865-0665</a></p>
     </section>
 </div>
 
