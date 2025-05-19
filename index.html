@@ -1,172 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Dr. Kwabena Kingsley Kumah</title>
-    <meta name="description" content="Dr. Kwabena Kingsley Kumah - Remote Sensing, Precipitation Retrieval, Hydrometeorology">
-    <meta name="keywords" content="Kwabena Kumah, Remote Sensing, Precipitation Retrieval, Hydrometeorology, AVHRR, GPCP, IMERG">
-    <meta name="author" content="Kwabena Kingsley Kumah">
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-        .profile-pic {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 3px solid white;
-        }
-        nav {
-            background-color: #e9ecef;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #007bff;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Kwabena Kingsley Kumah</title>
+  <meta name="description" content="Dr. Kwabena Kingsley Kumah - Remote Sensing & Precipitation Research">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header.hero {
+      background-color: #0b4f88;
+      color: white;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header.hero img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      margin-top: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    header.hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    header.hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: white;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #0b4f88;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #0b4f88;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #0077cc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background: #0b4f88;
+      color: white;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Dr. Kwabena Kingsley Kumah</h1>
-    <img src="profile.jpeg" alt="Dr. Kwabena Kingsley Kumah" class="profile-pic">
+<header class="hero">
+  <h1>Dr. Kwabena Kingsley Kumah</h1>
+  <p>Postdoctoral Researcher | Remote Sensing & Precipitation Algorithms | University of Arizona</p>
+  <img src="profile.jpeg" alt="Kwabena Kingsley Kumah">
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#publications">Publications</a>
-    <a href="#media">Media</a>
-    <a href="#profiles">Profiles</a>
-    <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#publications">Publications</a>
+  <a href="#media">Media</a>
+  <a href="#profiles">Profiles</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Postdoctoral Research Associate at the University of Arizona's Department of Hydrology and Atmospheric Sciences. My expertise lies in remote sensing-based precipitation retrieval, focusing on algorithm development, diagnostic evaluation, and uncertainty analysis. My research integrates data from multiple sources—including infrared (IR), microwave remote sensing, in situ observations, and reanalysis data—to enhance precipitation measurement accuracy. Currently, I am developing an AVHRR-based precipitation product targeting global high-latitude regions, complementing efforts like GPCP and IMERG.</p>
-    </section>
+  <section id="about">
+    <h2>About</h2>
+    <p>I specialize in remote sensing-based precipitation retrieval, algorithm development, and uncertainty diagnostics. My work leverages infrared, microwave satellite data, and ground-based observations combined with machine learning techniques to improve global rainfall estimation. I am currently developing an AVHRR-based precipitation product aimed at high-latitude regions, supporting initiatives like GPCP and IMERG.</p>
+  </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Postdoc Scholar</strong>, 2023–Present, Hydrometeorology, University of Arizona, Dept. of Hydrology & Atmospheric Sciences</li>
-            <li><strong>PhD</strong>, 2022, GIS and Earth Observation, University of Twente, Dept. of Water Resources, The Netherlands</li>
-            <li><strong>MSc</strong>, 2016, GIS and Earth Observation, University of Twente, Dept. of Water Resources, The Netherlands</li>
-            <li><strong>BSc</strong>, 2012, Environmental Science, University of Cape Coast, Ghana</li>
-        </ul>
-    </section>
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Postdoc Scholar, Hydrometeorology, University of Arizona, 2023–Present</li>
+      <li>PhD, GIS and Earth Observation, University of Twente, 2022</li>
+      <li>MSc, GIS and EO, University of Twente, 2016</li>
+      <li>BSc, Environmental Science, University of Cape Coast, Ghana, 2012</li>
+    </ul>
+  </section>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <ul>
-            <li><strong>Postdoctoral Research Associate</strong>: University of Arizona, Dept. of Hydrology & Atmospheric Sciences, 2023–Present</li>
-            <li><strong>Visiting Scientist</strong>: EUMETSAT/H-SAF group, 2022–2023</li>
-            <li><strong>Doctoral Researcher</strong>: University of Twente, Dept. of Water Resources, 2016–2022</li>
-            <li><strong>Researcher</strong>: University of Twente, Dept. of Water Resources, Mar 2016 – Jun 2016</li>
-        </ul>
-    </section>
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>Postdoc, University of Arizona – 2023–Present</li>
+      <li>Visiting Scientist, EUMETSAT – 2022–2023</li>
+      <li>Doctoral Researcher, University of Twente – 2016–2022</li>
+    </ul>
+  </section>
 
-    <section id="publications">
-        <h2>Selected Publications</h2>
-        <ul>
-            <li><a href="https://doi.org/10.1016/j.atmosres.2022.106357" target="_blank">Near real-time estimation of high spatiotemporal resolution rainfall from cloud top properties of the MSG satellite and commercial microwave link rainfall intensities</a>. Atmospheric Research, 2022.</li>
-            <li><a href="https://doi.org/10.3390/rs13163274" target="_blank">The MSG Technique: Improving Commercial Microwave Link Rainfall Intensity by Using Rain Area Detection from Meteosat Second Generation</a>. Remote Sensing, 2021.</li>
-            <li><a href="https://doi.org/10.3390/s21103547" target="_blank">Rain Area Detection in South-Western Kenya by Using Multispectral Satellite Data from Meteosat Second Generation</a>. Sensors, 2021.</li>
-            <li><a href="https://doi.org/10.3390/w13050730" target="_blank">On the Power of Microwave Communication Data to Monitor Rain for Agricultural Needs in Africa</a>. Water, 2021.</li>
-            <li><a href="https://doi.org/10.3390/atmos11090884" target="_blank">Combining MWL and MSG SEVIRI Satellite Signals for Rainfall Detection and Estimation</a>. Atmosphere, 2020.</li>
-        </ul>
-    </section>
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li><a href="https://doi.org/10.1016/j.atmosres.2022.106357" target="_blank">Near real-time rainfall estimation from MSG & microwave links</a> - Atmospheric Research, 2022</li>
+      <li><a href="https://doi.org/10.3390/rs13163274" target="_blank">The MSG Technique for CML Rainfall Enhancement</a> - Remote Sensing, 2021</li>
+      <li><a href="https://doi.org/10.3390/s21103547" target="_blank">Rain Area Detection in Kenya using MSG Data</a> - Sensors, 2021</li>
+    </ul>
+  </section>
 
-    <section id="media">
-        <h2>Media Coverage</h2>
-        <ul>
-            <li><a href="https://www.itc.nl/news/2022/10/196298/itc-algorithm-detects-rainfall-in-rural-africa" target="_blank">ITC Algorithm Detects Rainfall in Rural Africa - ITC News</a></li>
-            <li><a href="https://physics.aps.org/articles/v14/161" target="_blank">Detecting Rainfall in Rural Africa - APS Physics</a></li>
-            <li><a href="https://www.myscience.org/news/2022/itc_algorithm_detects_rainfall_in_rural_africa-2022-utwente" target="_blank">ITC Algorithm on MyScience.org</a></li>
-            <li><a href="https://innovationorigins.com/en/selected/researcher-from-ut-developed-an-algorithm-to-predict-rainfall-in-rural-africa/" target="_blank">Innovation Origins: Rainfall Prediction Algorithm</a></li>
-        </ul>
-    </section>
+  <section id="media">
+    <h2>Media Features</h2>
+    <ul>
+      <li><a href="https://www.itc.nl/news/2022/10/196298/itc-algorithm-detects-rainfall-in-rural-africa" target="_blank">ITC Algorithm Detects Rainfall in Rural Africa</a></li>
+      <li><a href="https://physics.aps.org/articles/v14/161" target="_blank">APS Physics: Rainfall Detection Algorithm</a></li>
+      <li><a href="https://innovationorigins.com/en/selected/researcher-from-ut-developed-an-algorithm-to-predict-rainfall-in-rural-africa/" target="_blank">Innovation Origins: Predicting Rainfall in Africa</a></li>
+    </ul>
+  </section>
 
-    <section id="profiles">
-        <h2>Academic Profiles</h2>
-        <ul>
-            <li><a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
-            <li><a href="https://www.researchgate.net/profile/K-Kumah?ev=hdr_xprf" target="_blank">ResearchGate</a></li>
-            <li><a href="https://orcid.org/0000-0001-6865-0665" target="_blank">ORCID</a></li>
-            <li><a href="https://arizona.figshare.com/authors/Kwabena_Kingsley_Kumah/20417501" target="_blank">Figshare</a></li>
-        </ul>
-    </section>
+  <section id="profiles">
+    <h2>Academic Profiles</h2>
+    <ul>
+      <li><a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank">Google Scholar</a></li>
+      <li><a href="https://www.researchgate.net/profile/K-Kumah" target="_blank">ResearchGate</a></li>
+      <li><a href="https://orcid.org/0000-0001-6865-0665" target="_blank">ORCID</a></li>
+    </ul>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p><strong>Office:</strong> JW Harshbarger Building, Room 316D, University of Arizona</p>
-        <p><strong>Email:</strong> <a href="mailto:kkumah@arizona.edu">kkumah@arizona.edu</a></p>
-        <p><strong>Alternate Email:</strong> <a href="mailto:kkumahkwabena@gmail.com">kkumahkwabena@gmail.com</a></p>
-    </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:kkumah@arizona.edu">kkumah@arizona.edu</a></p>
+    <p>Alternate: <a href="mailto:kkumahkwabena@gmail.com">kkumahkwabena@gmail.com</a></p>
+    <p>Office: JW Harshbarger Building, Room 316D, University of Arizona</p>
+  </section>
 </div>
 
 <footer>
-    <p>&copy; 2025 Dr. Kwabena Kingsley Kumah | All Rights Reserved</p>
+  <p>&copy; 2025 Dr. Kwabena Kingsley Kumah. All rights reserved.</p>
 </footer>
 
 </body>
