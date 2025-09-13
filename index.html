@@ -3,258 +3,457 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Dr. Kwabena Kingsley Kumah | Remote Sensing Researcher</title>
-  <meta name="description" content="Dr. Kwabena Kingsley Kumah is a postdoctoral researcher in Remote Sensing and Precipitation Algorithms at the University of Arizona. Explore his resume, publications, and technical portfolio.">
-  <meta name="keywords" content="Remote Sensing, Precipitation Algorithms, AVHRR, Satellite Data, Kingsley Kumah, Rainfall Retrieval, GIS, Earth Observation, University of Arizona, GPM, IMERG, Research Scientist">
-  <meta name="author" content="Dr. Kwabena Kingsley Kumah">
-  <meta name="robots" content="index, follow">
+  <title>Dr. Kwabena Kingsley Kumah – Remote Sensing • GIS • AI</title>
+  <meta name="description" content="Remote Sensing / GIS scientist applying AI to Earth observation. Algorithms, data fusion, and operational geospatial analytics. Publications, media, and contact." />
   <link rel="canonical" href="https://king2coding.github.io/kkumah-website/" />
+  <meta name="robots" content="index,follow" />
 
-  <!-- Google Verification Tag -->
-  <meta name="google-site-verification" content="7f2HKmYGPZF9kVD..." />
-
-  <!-- OpenGraph Metadata -->
-  <meta property="og:title" content="Dr. Kwabena Kingsley Kumah | Remote Sensing Researcher" />
-  <meta property="og:description" content="Postdoctoral researcher in remote sensing, precipitation algorithms, and satellite-based rainfall estimation." />
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Dr. Kwabena Kingsley Kumah – Remote Sensing • GIS • AI" />
+  <meta property="og:description" content="Remote Sensing / GIS scientist applying AI to Earth observation. Algorithms, data fusion, and operational geospatial analytics." />
   <meta property="og:image" content="https://king2coding.github.io/kkumah-website/profile.jpeg" />
   <meta property="og:url" content="https://king2coding.github.io/kkumah-website/" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dr. Kwabena Kingsley Kumah | Remote Sensing Expert">
-  <meta name="twitter:description" content="Explore the work and publications of Dr. Kumah, expert in satellite precipitation algorithms and geospatial analytics.">
-  <meta name="twitter:image" content="https://king2coding.github.io/kkumah-website/profile.jpeg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dr. Kwabena Kingsley Kumah – Remote Sensing • GIS • AI" />
+  <meta name="twitter:description" content="Remote Sensing / GIS scientist applying AI to Earth observation." />
+  <meta name="twitter:image" content="https://king2coding.github.io/kkumah-website/profile.jpeg" />
 
-  <!-- JSON-LD Structured Data -->
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Kwabena Kingsley Kumah",
-    "jobTitle": "Postdoctoral Researcher",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "University of Arizona"
-    },
+    "jobTitle": "Postdoctoral Research Scholar",
+    "affiliation": {"@type": "Organization", "name": "University of Arizona"},
     "url": "https://king2coding.github.io/kkumah-website/",
+    "image": "https://king2coding.github.io/kkumah-website/profile.jpeg",
+    "email": "mailto:kkumah@arizona.edu",
     "sameAs": [
       "https://scholar.google.com/citations?user=gDm8q-QAAAAJ",
       "https://www.linkedin.com/in/kkumah/",
       "https://orcid.org/0000-0001-6865-0665",
       "https://www.researchgate.net/profile/K-Kumah"
     ],
-    "description": "Dr. Kwabena Kingsley Kumah is a postdoctoral researcher specializing in remote sensing, satellite precipitation algorithms, and geospatial data analysis."
+    "description": "Remote Sensing / GIS scientist applying AI to Earth observation; algorithms, data fusion, uncertainty analysis, and operational geospatial analytics."
   }
   </script>
 
-  <!-- Fonts and Style -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3B82F6',
+            secondary: '#10B981',
+            dark: '#1F2937',
+            light: '#F3F4F6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS / Icons / Effects -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f7f9fc;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header.hero {
-      background-color: #0b4f88;
-      color: white;
-      text-align: center;
-      padding: 60px 20px 40px;
-    }
-
-    header.hero img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid white;
-      margin-top: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    header.hero h1 {
-      font-size: 2.4rem;
-      margin-bottom: 10px;
-    }
-
-    header.hero p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-
-    nav {
-      background: white;
-      padding: 12px 20px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-
-    nav a {
-      margin: 0 15px;
-      color: #0b4f88;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    section {
-      margin-bottom: 50px;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      color: #0b4f88;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: #0077cc;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      background: #0b4f88;
-      color: white;
-      padding: 20px 10px;
-      font-size: 0.9rem;
-      margin-top: 40px;
-    }
+    .custom-shape-divider-bottom {position:absolute;bottom:0;left:0;width:100%;overflow:hidden;line-height:0;transform:rotate(180deg)}
+    .custom-shape-divider-bottom svg{position:relative;display:block;width:calc(100% + 1.3px);height:150px}
+    .custom-shape-divider-bottom .shape-fill{fill:#FFFFFF}
+    .skill-bar{height:8px;border-radius:4px;background:#E5E7EB;overflow:hidden}
+    .skill-progress{height:100%;border-radius:4px;background:linear-gradient(90deg,#3B82F6,#10B981);transition:width 1s ease-in-out}
+    .publication-card:hover{transform:translateY(-5px);box-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04)}
+    .nav-link:hover{color:#3B82F6}
+    .nav-link::after{content:'';display:block;width:0;height:2px;background:#3B82F6;transition:width .3s}
+    .nav-link:hover::after{width:100%}
   </style>
 </head>
-<body>
+<body class="bg-gray-50 font-sans antialiased" id="vanta-bg">
 
-<header class="hero">
-  <h1>Dr. Kwabena Kingsley Kumah</h1>
-  <p>Postdoctoral Researcher | Remote Sensing & Precipitation Algorithms | University of Arizona</p>
-  <img src="profile.jpeg" alt="Kwabena Kingsley Kumah">
-</header>
+  <!-- Header / Nav -->
+  <header class="fixed w-full z-50 bg-white/80 backdrop-blur-sm shadow-sm">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="#" class="text-2xl font-bold text-dark flex items-center">
+          <span class="bg-primary text-white p-2 rounded-lg mr-2">KK</span>
+          Dr. Kwabena Kingsley Kumah
+        </a>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#about" class="nav-link text-gray-700 transition">About</a>
+          <a href="#research" class="nav-link text-gray-700 transition">Focus</a>
+          <a href="#skills" class="nav-link text-gray-700 transition">Expertise</a>
+          <a href="#publications" class="nav-link text-gray-700 transition">Publications</a>
+          <a href="#media" class="nav-link text-gray-700 transition">Media</a>
+          <a href="#contact" class="nav-link text-gray-700 transition">Contact</a>
+        </nav>
+        <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+          <i data-feather="menu"></i>
+        </button>
+      </div>
+    </div>
+    <div class="hidden md:hidden bg-white py-4 px-6 shadow-lg" id="mobile-menu">
+      <div class="flex flex-col space-y-4">
+        <a href="#about" class="text-gray-700">About</a>
+        <a href="#research" class="text-gray-700">Focus</a>
+        <a href="#skills" class="text-gray-700">Expertise</a>
+        <a href="#publications" class="text-gray-700">Publications</a>
+        <a href="#media" class="text-gray-700">Media</a>
+        <a href="#contact" class="text-gray-700">Contact</a>
+      </div>
+    </div>
+  </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
-  <a href="#skills">Skills</a>
-  <a href="#publications">Publications</a>
-  <a href="#media">Media</a>
-  <a href="#profiles">Profiles</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<div class="container">
-  <section id="about">
-    <h2>About</h2>
-    <p>I specialize in remote sensing-based precipitation retrieval, algorithm development, and uncertainty diagnostics. My work leverages infrared, microwave satellite data, and ground-based observations combined with machine learning techniques to improve global rainfall estimation. I am currently developing an AVHRR-based precipitation product aimed at high-latitude regions, supporting initiatives like GPCP and IMERG.</p>
-    <p>My research has also focused on leveraging commercial microwave links (CMLs) from telecommunication networks, combined with satellite data, to enhance rainfall estimation in data-scarce regions. This innovative approach utilizes signal attenuation in communication networks to infer precipitation, offering a cost-effective solution for improving rainfall monitoring where traditional sensors are limited.</p>
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center justify-center pt-20">
+    <div class="container mx-auto px-6 py-20">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+          <h1 class="text-4xl md:text-6xl font-bold text-dark mb-6">Remote Sensing • GIS • AI</h1>
+          <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 mb-8">Algorithms, data fusion, and uncertainty-aware Earth observation</h2>
+          <p class="text-lg text-gray-600 mb-8 max-w-xl">Postdoctoral Research Scholar at the University of Arizona applying machine learning to satellite and in‑situ observations to build robust geospatial solutions across precipitation, snow & ice, land–atmosphere interactions, and climate data records.</p>
+          <div class="flex space-x-4">
+            <a href="#contact" class="bg-primary hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition">Get in touch</a>
+            <a href="#publications" class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold px-6 py-3 rounded-lg transition">View publications</a>
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+          <div class="relative">
+            <img src="https://king2coding.github.io/kkumah-website/profile.jpeg" alt="Dr. Kwabena Kingsley Kumah" class="w-full max-w-md rounded-lg shadow-2xl border-4 border-white">
+            <div class="absolute -bottom-5 -right-5 bg-primary text-white p-4 rounded-lg shadow-lg flex items-center">
+              <i data-feather="award"></i>
+              <span class="ml-2 font-semibold">UArizona • NASA GPCP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0">
+      <div class="custom-shape-divider-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>Postdoc Scholar, Hydrometeorology, University of Arizona, 2023–Present</li>
-      <li>PhD, GIS and Earth Observation, University of Twente, 2022</li>
-      <li>MSc, GIS and EO, University of Twente, 2016</li>
-      <li>BSc, Environmental Science, University of Cape Coast, Ghana, 2012</li>
-    </ul>
+  <!-- About -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">About</h2>
+        <div class="w-20 h-1 bg-primary mx-auto"></div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center" data-aos="fade-right">
+          <img src="https://king2coding.github.io/kkumah-website/profile.jpeg" alt="Dr. Kwabena Kingsley Kumah" class="rounded-full w-64 h-64 object-cover border-4 border-primary shadow-lg" />
+        </div>
+        <div class="md:w-2/3 md:pl-12" data-aos="fade-left">
+          <h3 class="text-2xl font-semibold text-dark mb-6">Remote Sensing • GIS • AI</h3>
+          <p class="text-gray-700 mb-4">I build end‑to‑end geospatial algorithms and workflows using satellite observations (IR/MW/optical), in‑situ networks, and reanalysis to deliver operational Earth‑observation products. My work spans precipitation, snow & ice mapping, rain‑area detection, and uncertainty quantification, with strong emphasis on scalable Python pipelines and reproducible evaluation.</p>
+          <p class="text-gray-700">I collaborate with NASA GPCP and partners across academia and industry. Recent efforts include extending historical snow/ice cover before the consistent satellite era and developing IR‑based retrievals with AVHRR over high latitudes through double‑ML strategies.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li>Postdoctoral Research Associate, University of Arizona – 2023–Present</li>
-      <li>Data Analyst, TAHMO – 2023–Present</li>
-      <li>Visiting Scientist, EUMETSAT – 2022–2023</li>
-      <li>Doctoral Researcher, University of Twente – 2016–2022</li>
-    </ul>
+  <!-- Research / Focus -->
+  <section id="research" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Focus Areas</h2>
+        <div class="w-20 h-1 bg-primary mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-primary/10 p-4 rounded-lg w-16 h-16 flex items-center justify-center mb-6">
+            <i data-feather="cpu" class="text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-dark mb-3">AI for EO</h3>
+          <p class="text-gray-600">Machine learning for retrievals and detection (classification/regression, ensemble methods, uncertainty), integrating physical constraints and multi‑sensor data.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-primary/10 p-4 rounded-lg w-16 h-16 flex items-center justify-center mb-6">
+            <i data-feather="layers" class="text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-dark mb-3">Data Fusion & CDRs</h</h3>
+          <p class="text-gray-600">Multi‑source blending (satellite, CMLs, gauges, reanalysis) and evaluation to support climate data records (e.g., GPCP) and long‑term monitoring.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+          <div class="bg-primary/10 p-4 rounded-lg w-16 h-16 flex items-center justify-center mb-6">
+            <i data-feather="activity" class="text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-dark mb-3">Operational Pipelines</h3>
+          <p class="text-gray-600">Scalable Python/xarray workflows, HPC, and cloud‑ready processing for near‑real‑time and retrospective products.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Geospatial Data Analysis:</strong> GIS, Remote Sensing, spatiotemporal modeling, and geospatial data fusion</li>
-      <li><strong>Programming Languages:</strong> Python (numpy, pandas, geopandas, xarray, matplotlib), Bash scripting</li>
-      <li><strong>Data Formats & Tools:</strong> netCDF, HDF5, GeoTIFF, shapefiles, GDAL, rasterio, QGIS, ArcGIS</li>
-      <li><strong>Satellite Data Handling:</strong> AVHRR, MSG SEVIRI, GPM/IMERG, CMORPH, CHIRPS</li>
-      <li><strong>Machine Learning:</strong> Scikit-learn, regression/classification models for rainfall retrieval</li>
-      <li><strong>Automation & Workflow:</strong> End-to-end geoprocessing workflows, batch satellite processing</li>
-      <li><strong>HPC Usage:</strong> High-performance computing for satellite data processing</li>
-    </ul>
+  <!-- Skills / Expertise -->
+  <section id="skills" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Technical Expertise</h2>
+        <div class="w-20 h-1 bg-primary mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div data-aos="fade-right">
+          <h3 class="text-2xl font-semibold text-dark mb-6">Core Competencies</h3>
+          <ul class="space-y-4 text-gray-700">
+            <li class="flex"><i data-feather="check" class="text-primary mr-2"></i> Remote Sensing & GIS (AVHRR, MODIS, MSG SEVIRI, GPM/IMERG, ERA5, GPCC)</li>
+            <li class="flex"><i data-feather="check" class="text-primary mr-2"></i> ML for EO (classification, regression, uncertainty, ensemble methods)</li>
+            <li class="flex"><i data-feather="check" class="text-primary mr-2"></i> Geospatial analytics & viz (GDAL, Rasterio, GeoPandas, Cartopy, ArcGIS/QGIS)</li>
+            <li class="flex"><i data-feather="check" class="text-primary mr-2"></i> Data engineering (NetCDF, HDF5, GRIB, GeoTIFF; reproducible pipelines)</li>
+            <li class="flex"><i data-feather="check" class="text-primary mr-2"></i> HPC / automation for large‑scale satellite processing</li>
+          </ul>
+        </div>
+        <div data-aos="fade-left">
+          <h3 class="text-2xl font-semibold text-dark mb-6">Tools</h3>
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between mb-2"><span class="font-medium text-gray-700">Python (NumPy, Pandas, Xarray, scikit‑learn, Matplotlib)</span><span class="text-gray-500">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2"><span class="font-medium text-gray-700">Geospatial (GDAL, Rasterio, GeoPandas, Cartopy, ArcGIS/QGIS)</span><span class="text-gray-500">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2"><span class="font-medium text-gray-700">Data Formats (NetCDF, HDF5, GRIB, GeoTIFF, Shapefiles)</span><span class="text-gray-500">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2"><span class="font-medium text-gray-700">Cloud/HPC (automation, batch processing)</span><span class="text-gray-500">Proficient</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li><a href="https://doi.org/10.1016/j.atmosres.2022.106357" target="_blank">Near real-time rainfall estimation from MSG & microwave links</a></li>
-      <li><a href="https://doi.org/10.3390/rs13163274" target="_blank">The MSG Technique for CML Rainfall Enhancement</a></li>
-      <li><a href="https://doi.org/10.3390/s21103547" target="_blank">Rain Area Detection in Kenya using MSG Data</a></li>
-    </ul>
+  <!-- Publications -->
+  <section id="publications" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Selected Publications & Data</h2>
+        <div class="w-20 h-1 bg-primary mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- ESS 2025 -->
+        <article class="bg-white rounded-xl shadow-md overflow-hidden publication-card transition" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-40 bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+            <i data-feather="book-open" class="text-white w-12 h-12"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2"><span class="bg-primary/10 text-primary text-xs font-semibold px-2.5 py-0.5 rounded mr-2">Earth & Space Science</span><span class="text-gray-500 text-sm">2025</span></div>
+            <h3 class="text-lg font-semibold text-dark mb-2">Retrospective Mapping of Global Snow and Ice Cover Beyond the Satellite Observational Era</h3>
+            <p class="text-gray-600 text-sm mb-4">Kumah, Zandi & Behrangi.</p>
+            <a class="text-primary font-medium text-sm flex items-center hover:underline" href="https://doi.org/10.1029/2024ea004171" target="_blank" rel="noopener">Read DOI <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+          </div>
+        </article>
+        <!-- Atmos Res 2022 -->
+        <article class="bg-white rounded-xl shadow-md overflow-hidden publication-card transition" data-aos="fade-up" data-aos-delay="150">
+          <div class="h-40 bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+            <i data-feather="book-open" class="text-white w-12 h-12"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2"><span class="bg-primary/10 text-primary text-xs font-semibold px-2.5 py-0.5 rounded mr-2">Atmospheric Research</span><span class="text-gray-500 text-sm">2022</span></div>
+            <h3 class="text-lg font-semibold text-dark mb-2">Near‑real‑time estimation of rainfall from MSG cloud‑top properties & CML intensities</h3>
+            <p class="text-gray-600 text-sm mb-4">Kumah, Maathuis, Hoedjes & Su.</p>
+            <a class="text-primary font-medium text-sm flex items-center hover:underline" href="https://doi.org/10.1016/j.atmosres.2022.106357" target="_blank" rel="noopener">Read DOI <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+          </div>
+        </article>
+        <!-- Remote Sensing 2021 -->
+        <article class="bg-white rounded-xl shadow-md overflow-hidden publication-card transition" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-40 bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+            <i data-feather="book-open" class="text-white w-12 h-12"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2"><span class="bg-primary/10 text-primary text-xs font-semibold px-2.5 py-0.5 rounded mr-2">Remote Sensing</span><span class="text-gray-500 text-sm">2021</span></div>
+            <h3 class="text-lg font-semibold text-dark mb-2">The MSG Technique: Improving CML rainfall intensity using rain‑area detection</h3>
+            <p class="text-gray-600 text-sm mb-4">Kumah et al.</p>
+            <a class="text-primary font-medium text-sm flex items-center hover:underline" href="https://doi.org/10.3390/rs13163274" target="_blank" rel="noopener">Read DOI <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+          </div>
+        </article>
+        <!-- Sensors 2021 -->
+        <article class="bg-white rounded-xl shadow-md overflow-hidden publication-card transition" data-aos="fade-up" data-aos-delay="250">
+          <div class="h-40 bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+            <i data-feather="book-open" class="text-white w-12 h-12"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2"><span class="bg-primary/10 text-primary text-xs font-semibold px-2.5 py-0.5 rounded mr-2">Sensors</span><span class="text-gray-500 text-sm">2021</span></div>
+            <h3 class="text-lg font-semibold text-dark mb-2">Rain‑area detection in SW Kenya using multispectral MSG</h3>
+            <p class="text-gray-600 text-sm mb-4">Kumah et al.</p>
+            <a class="text-primary font-medium text-sm flex items-center hover:underline" href="https://doi.org/10.3390/s21103547" target="_blank" rel="noopener">Read DOI <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+          </div>
+        </article>
+        <!-- Dataset 2024 -->
+        <article class="bg-white rounded-xl shadow-md overflow-hidden publication-card transition" data-aos="fade-up" data-aos-delay="300">
+          <div class="h-40 bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+            <i data-feather="database" class="text-white w-12 h-12"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2"><span class="bg-primary/10 text-primary text-xs font-semibold px-2.5 py-0.5 rounded mr-2">Dataset</span><span class="text-gray-500 text-sm">2024</span></div>
+            <h3 class="text-lg font-semibold text-dark mb-2">Global Snow & Ice Cover (1980–1987): Extended GMASI</h3>
+            <p class="text-gray-600 text-sm mb-4">Kumah, Zandi & Behrangi.</p>
+            <a class="text-primary font-medium text-sm flex items-center hover:underline" href="https://doi.org/10.25422/azu.data.28012532.v1" target="_blank" rel="noopener">View DOI <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+          </div>
+        </article>
+        <!-- AGU Abstract 2024 -->
+        <article class="bg-white rounded-xl shadow-md overflow-hidden publication-card transition" data-aos="fade-up" data-aos-delay="350">
+          <div class="h-40 bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+            <i data-feather="file-text" class="text-white w-12 h-12"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2"><span class="bg-primary/10 text-primary text-xs font-semibold px-2.5 py-0.5 rounded mr-2">AGU Abstract</span><span class="text-gray-500 text-sm">2024</span></div>
+            <h3 class="text-lg font-semibold text-dark mb-2">AVHRR IR‑based precipitation product via double‑ML over high latitudes</h3>
+            <p class="text-gray-600 text-sm mb-4">Zandi, Kumah & Behrangi.</p>
+            <a class="text-primary font-medium text-sm flex items-center hover:underline" href="https://ui.adsabs.harvard.edu/abs/2024AGUFMH13U...04Z" target="_blank" rel="noopener">Read abstract <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="text-center mt-12" data-aos="fade-up">
+        <a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank" rel="noopener" class="inline-flex items-center text-primary font-semibold hover:underline">View all on Google Scholar<i data-feather="external-link" class="ml-2 w-4 h-4"></i></a>
+      </div>
+    </div>
   </section>
 
-  <section id="media">
-    <h2>Media Features</h2>
-    <ul>
-      <li><a href="https://www.itc.nl/news/2022/10/196298/itc-algorithm-detects-rainfall-in-rural-africa" target="_blank">ITC Algorithm Detects Rainfall in Rural Africa</a></li>
-      <li><a href="https://physics.aps.org/articles/v14/161" target="_blank">APS Physics: Rainfall Detection Algorithm</a></li>
-      <li><a href="https://innovationorigins.com/en/selected/researcher-from-ut-developed-an-algorithm-to-predict-rainfall-in-rural-africa/" target="_blank">Innovation Origins: Predicting Rainfall in Africa</a></li>
-    </ul>
+  <!-- Media -->
+  <section id="media" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Media Features</h2>
+        <div class="w-20 h-1 bg-primary mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <a class="block bg-light p-6 rounded-xl shadow-sm hover:shadow-md transition" href="https://www.itc.nl/news/2022/10/196298/itc-algorithm-detects-rainfall-in-rural-africa" target="_blank" rel="noopener">
+          <h3 class="font-semibold text-dark mb-2">ITC: Algorithm detects rainfall in rural Africa</h3>
+          <p class="text-gray-600 text-sm">Feature on MSG‑CML rainfall research.</p>
+        </a>
+        <a class="block bg-light p-6 rounded-xl shadow-sm hover:shadow-md transition" href="https://physics.aps.org/articles/v14/161" target="_blank" rel="noopener">
+          <h3 class="font-semibold text-dark mb-2">APS Physics: Rainfall detection algorithm</h3>
+          <p class="text-gray-600 text-sm">Highlight on rainfall detection via telecom links.</p>
+        </a>
+        <a class="block bg-light p-6 rounded-xl shadow-sm hover:shadow-md transition" href="https://innovationorigins.com/en/selected/researcher-from-ut-developed-an-algorithm-to-predict-rainfall-in-rural-africa/" target="_blank" rel="noopener">
+          <h3 class="font-semibold text-dark mb-2">Innovation Origins: Predicting rainfall in Africa</h3>
+          <p class="text-gray-600 text-sm">Coverage of algorithm development and impact.</p>
+        </a>
+      </div>
+    </div>
   </section>
 
-  <section id="profiles">
-    <h2>Academic Profiles</h2>
-    <ul>
-      <li><a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank">Google Scholar</a></li>
-      <li><a href="https://www.researchgate.net/profile/K-Kumah" target="_blank">ResearchGate</a></li>
-      <li><a href="https://orcid.org/0000-0001-6865-0665" target="_blank">ORCID</a></li>
-      <li><a href="https://www.linkedin.com/in/kkumah/" target="_blank">LinkedIn</a></li>
-    </ul>
+  <!-- Contact / Profiles -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Get in Touch</h2>
+        <div class="w-20 h-1 bg-primary mx-auto"></div>
+      </div>
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+          <h3 class="text-2xl font-semibold text-dark mb-6">Contact</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="bg-primary/10 p-3 rounded-lg mr-4"><i data-feather="mail" class="text-primary"></i></div>
+              <div>
+                <h4 class="font-semibold text-dark">Email</h4>
+                <p class="text-gray-700"><a class="hover:underline" href="mailto:kkumah@arizona.edu">kkumah@arizona.edu</a> • <a class="hover:underline" href="mailto:kkumahkwabena@gmail.com">kkumahkwabena@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-primary/10 p-3 rounded-lg mr-4"><i data-feather="map-pin" class="text-primary"></i></div>
+              <div>
+                <h4 class="font-semibold text-dark">Office</h4>
+                <p class="text-gray-700">JW Harshbarger Building, Room 316D, University of Arizona</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-primary/10 p-3 rounded-lg mr-4"><i data-feather="link" class="text-primary"></i></div>
+              <div>
+                <h4 class="font-semibold text-dark">Profiles</h4>
+                <div class="flex flex-wrap gap-4 mt-2 text-gray-700">
+                  <a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank" rel="noopener" class="hover:text-primary">Google Scholar</a>
+                  <a href="https://www.researchgate.net/profile/K-Kumah" target="_blank" rel="noopener" class="hover:text-primary">ResearchGate</a>
+                  <a href="https://orcid.org/0000-0001-6865-0665" target="_blank" rel="noopener" class="hover:text-primary">ORCID</a>
+                  <a href="https://www.linkedin.com/in/kkumah/" target="_blank" rel="noopener" class="hover:text-primary">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+          <form class="space-y-6" onsubmit="event.preventDefault(); alert('Thanks! Please email instead for a sure response.');">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" />
+              </div>
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+              <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary"></textarea>
+            </div>
+            <button type="submit" class="bg-primary hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition w-full md:w-auto">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:kkumah@arizona.edu">kkumah@arizona.edu</a></p>
-    <p>Alternate: <a href="mailto:kkumahkwabena@gmail.com">kkumahkwabena@gmail.com</a></p>
-    <p>Office: JW Harshbarger Building, Room 316D, University of Arizona</p>
-  </section>
-</div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <a href="#" class="text-2xl font-bold text-white flex items-center"><span class="bg-primary text-white p-2 rounded-lg mr-2">KK</span>Dr. Kwabena Kingsley Kumah</a>
+          <p class="mt-4 text-gray-300">Remote Sensing • GIS • AI</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="https://www.linkedin.com/in/kkumah/" target="_blank" rel="noopener" class="text-gray-300 hover:text-primary"><i data-feather="linkedin"></i></a>
+          <a href="https://github.com/king2coding" target="_blank" rel="noopener" class="text-gray-300 hover:text-primary"><i data-feather="github"></i></a>
+          <a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank" rel="noopener" class="text-gray-300 hover:text-primary"><i data-feather="external-link"></i></a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; <span id="year"></span> Dr. Kwabena Kingsley Kumah. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-<footer>
-  <p>&copy; 2025 Dr. Kwabena Kingsley Kumah. All rights reserved.</p>
-</footer>
-
+  <!-- Scripts -->
+  <script>
+    VANTA.GLOBE({ el: '#vanta-bg', mouseControls:true, touchControls:true, gyroControls:false, minHeight:200.00, minWidth:200.00, scale:1.00, scaleMobile:1.00, color:0x3b82f6, backgroundColor:0xf3f4f6, size:1.00 });
+    AOS.init({ duration:800, easing:'ease-in-out', once:true, mirror:false });
+    document.getElementById('mobile-menu-button').addEventListener('click',()=>{document.getElementById('mobile-menu').classList.toggle('hidden')});
+    // Animate skill bars when skills section intersects
+    const skillBars = document.querySelectorAll('.skill-progress');
+    const animateSkillBars = () => { skillBars.forEach(bar => { const w = bar.style.width; bar.style.width='0'; setTimeout(()=>{ bar.style.width=w; }, 80); }); };
+    const skillsSection = document.getElementById('skills');
+    const observer = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ animateSkillBars(); observer.unobserve(e.target); } }); }, {threshold:0.1});
+    if(skillsSection) observer.observe(skillsSection);
+    feather.replace();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
