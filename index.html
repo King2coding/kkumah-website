@@ -200,75 +200,53 @@
     </div>
   </section>
 
-  <!-- Current & Past Activities -->
-  <section id="activities" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-12" data-aos="fade-up">
-        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Current & Past Activities</h2>
-        <div class="w-20 h-1 bg-primary mx-auto"></div>
-        <p class="text-gray-600 mt-4 max-w-3xl mx-auto">Selected projects and collaborations across research and real-world applications.</p>
-      </div>
-
-      <!-- Currently -->
-      <div class="mb-8">
-        <div class="flex items-center mb-4">
-          <span class="chip"><i data-feather="activity"></i>Currently</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- AVHRR High-Lat Product -->
-          <article class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition" data-aos="fade-up">
-            <div class="flex items-center justify-between mb-3">
-              <h3 class="text-xl font-semibold text-dark">AVHRR IR-based Precipitation (High Latitudes)</h3>
-              <span class="chip"><i data-feather="users"></i>UArizona • collab: NASA GPCP</span>
-            </div>
-            <p class="text-gray-700 mb-3">Developing and evaluating an AVHRR-based precipitation mapping approach using double-ML strategies; contributing to long-term precipitation records and cross-sensor consistency.</p>
-            <ul class="text-gray-600 text-sm space-y-2">
-              <li class="flex"><i data-feather="check" class="w-4 h-4 mr-2 text-primary"></i>Algorithm design, diagnostics, and uncertainty analysis</li>
-              <li class="flex"><i data-feather="check" class="w-4 h-4 mr-2 text-primary"></i>Integration with reanalysis and gauge constraints</li>
-            </ul>
-          </article>
-
-          <!-- Buienradar for Africa -->
-          <article class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="100">
-            <div class="flex items-center justify-between mb-3">
-              <h3 class="text-xl font-semibold text-dark">“(Buien)radar for Africa” – Ghana Pilot</h3>
-              <span class="chip"><i data-feather="globe"></i>Ghana</span>
-            </div>
-            <p class="text-gray-700 mb-3">Operationalizing my PhD algorithm by blending satellite, Commercial Microwave Links (CML), and station data for real-time rainfall maps and short-term nowcasts.</p>
-            <div class="flex flex-wrap gap-2 mb-3">
-              <span class="chip"><i data-feather="briefcase"></i>Rainboo</span>
-              <span class="chip"><i data-feather="book-open"></i>TU Delft</span>
-              <span class="chip"><i data-feather="wifi"></i>TAHMO</span>
-              <span class="chip"><i data-feather="radio"></i>AirtelTigo</span>
-              <span class="chip"><i data-feather="cloud-drizzle"></i>KNMI</span>
-              <span class="chip"><i data-feather="map-pin"></i>GMet</span>
-            </div>
-            <ul class="text-gray-600 text-sm space-y-2">
-              <li class="flex"><i data-feather="check" class="w-4 h-4 mr-2 text-primary"></i>Pilot TRL 4–5 → 7 plan; web/app platform with alerts</li>
-              <li class="flex"><i data-feather="check" class="w-4 h-4 mr-2 text-primary"></i>Initial country focus: Ghana; scale to SSA</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-
-      <!-- Previously -->
-      <div class="mt-10">
-        <div class="flex items-center mb-4">
-          <span class="chip"><i data-feather="clock"></i>Previously</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition" data-aos="fade-up">
-            <h3 class="text-lg font-semibold text-dark mb-1">EUMETSAT • H-SAF (Visiting Scientist)</h3>
-            <p class="text-gray-600 text-sm">Validation and uncertainty evaluation for operational satellite precipitation retrievals.</p>
-          </article>
-          <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="text-lg font-semibold text-dark mb-1">PhD Research • University of Twente</h3>
-            <p class="text-gray-600 text-sm">Rainfall retrievals blending MSG SEVIRI with CMLs; rain-area detection and near-real-time mapping workflows.</p>    
-        </div>
-      </div>
+  <!-- Activities -->
+<section id="activities" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Current & Past Activities</h2>
+      <div class="w-20 h-1 bg-primary mx-auto"></div>
     </div>
-  </section>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <article class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-semibold text-dark mb-4">Currently</h3>
+        <ul class="space-y-4 text-gray-700">
+          <li class="flex">
+            <i data-feather="target" class="text-primary mr-2"></i>
+            <span><strong>AVHRR-based precipitation mapping</strong> at high latitudes, advancing algorithms, evaluation and uncertainty diagnostics at University of Arizona in collaboration with NASA GPCP.</span>
+          </li>
+          <li class="flex">
+            <i data-feather="database" class="text-primary mr-2"></i>
+            <span><strong>Cryosphere data records</strong>: Retrospective mapping of global snow &amp; ice cover and open data releases (Extended GMASI dataset 1980–1987).</span>
+          </li>
+          <li class="flex">
+            <i data-feather="git-branch" class="text-primary mr-2"></i>
+            <span><strong>Remote sensing &amp; GIS pipelines</strong>: scalable Python/xarray workflows for near-real-time and retrospective Earth-obs products.</span>
+          </li>
+        </ul>
+      </article>
 
+      <article class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-xl font-semibold text-dark mb-4">Previously</h3>
+        <ul class="space-y-4 text-gray-700">
+          <li class="flex">
+            <i data-feather="cpu" class="text-primary mr-2"></i>
+            <span>Developed <strong>machine-learning precipitation retrievals</strong> combining MSG SEVIRI and commercial microwave links for near-real-time rainfall monitoring.</span>
+          </li>
+          <li class="flex">
+            <i data-feather="briefcase" class="text-primary mr-2"></i>
+            <span><strong>Visiting Scientist</strong> at EUMETSAT/H-SAF, contributing to satellite precipitation R&amp;D and validation.</span>
+          </li>
+          <li class="flex">
+            <i data-feather="map" class="text-primary mr-2"></i>
+            <span><strong>Broader EO/GIS work</strong> across agriculture and water: rain-area detection, data fusion, and operational analytics.</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+  
   <!-- Skills / Expertise -->
   <section id="skills" class="py-20 bg-gray-50">
     <div class="container mx-auto px-6">
