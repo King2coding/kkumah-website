@@ -4,28 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-  <title>Dr. Kwabena Kingsley Kumah | Remote Sensing, Precipitation Retrieval &amp; Earth Observation</title>
-  <meta name="description" content="Dr. Kwabena Kingsley Kumah is a remote sensing scientist and precipitation retrieval specialist working on satellite precipitation algorithms, NASA GPCP, AVHRR, snow and ice climate data records, and geospatial machine learning." />
+  <title>Dr. Kwabena Kingsley Kumah | Remote Sensing &amp; Precipitation Retrieval</title>
+  <meta name="description" content="Dr. Kwabena Kingsley Kumah is a remote sensing and precipitation retrieval scientist specializing in satellite algorithm development, precipitation-product evaluation, geospatial machine learning, uncertainty analysis, and climate-data records." />
   <link rel="canonical" href="https://king2coding.github.io/kkumah-website/" />
   <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#0b3d4a" />
+  <meta name="theme-color" content="#f7f4ec" />
   <meta name="color-scheme" content="light" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="Kumah Research" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="apple-touch-icon" href="icon-192.jpg" />
   <link rel="preload" as="image" href="profile.jpeg" />
 
   <meta property="og:title" content="Dr. Kwabena Kingsley Kumah | Remote Sensing &amp; Precipitation Retrieval" />
-  <meta property="og:description" content="Satellite precipitation algorithms, AVHRR high-latitude retrievals, NASA GPCP, snow and ice climate data records, and geospatial machine learning." />
+  <meta property="og:description" content="Satellite precipitation retrieval, GPCP and IMERG evaluation, AVHRR high-latitude precipitation, ocean and polar precipitation validation, and geospatial machine learning." />
   <meta property="og:image" content="https://king2coding.github.io/kkumah-website/profile.jpeg" />
   <meta property="og:url" content="https://king2coding.github.io/kkumah-website/" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Dr. Kwabena Kingsley Kumah | Remote Sensing &amp; Earth Observation" />
-  <meta name="twitter:description" content="Remote sensing scientist specializing in precipitation retrieval, satellite algorithms, and geospatial machine learning." />
+  <meta name="twitter:description" content="Remote sensing scientist developing and evaluating satellite-based precipitation and cryosphere records." />
   <meta name="twitter:image" content="https://king2coding.github.io/kkumah-website/profile.jpeg" />
 
   <script type="application/ld+json">
@@ -34,7 +34,7 @@
     "@type": "Person",
     "name": "Kwabena Kingsley Kumah",
     "honorificSuffix": "Ph.D.",
-    "jobTitle": "Postdoctoral Research Scholar",
+    "jobTitle": "Postdoctoral Research Associate",
     "affiliation": {
       "@type": "Organization",
       "name": "University of Arizona"
@@ -49,915 +49,959 @@
       "https://www.linkedin.com/in/kkumah/",
       "https://github.com/king2coding"
     ],
-    "description": "Remote sensing scientist and precipitation retrieval specialist working on satellite precipitation algorithms, data fusion, uncertainty analysis, climate data records, and geospatial machine learning."
+    "description": "Remote sensing and precipitation retrieval scientist specializing in satellite algorithm development, precipitation-product evaluation, geospatial machine learning, uncertainty analysis, and climate-data records."
   }
   </script>
 
-  <script defer src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-
   <style>
     :root {
-      --ink: #102027;
-      --ocean: #0b7285;
-      --canopy: #2f9e44;
-      --sun: #f59f00;
-      --coral: #e8590c;
-      --mist: #eef7f4;
-      --paper: #fffdf8;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --ink: #1f2a2e;
+      --muted: #657174;
+      --line: #dedbd1;
+      --sage: #5f7464;
+      --teal: #276b73;
+      --clay: #9d6b4e;
+      --sand: #eee8dc;
+      --shadow: 0 18px 46px rgba(31, 42, 46, 0.08);
     }
 
     * { box-sizing: border-box; }
+
     html { scroll-behavior: smooth; }
+
     body {
       min-width: 320px;
+      margin: 0;
       overflow-x: hidden;
-      background:
-        linear-gradient(180deg, rgba(248, 250, 247, 0.98), rgba(255, 253, 248, 0.98) 36%, rgba(242, 248, 246, 0.98));
+      background: var(--paper);
       color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
     }
 
     body.menu-open { overflow: hidden; }
-    a { color: inherit; text-decoration: none; }
-    section { scroll-margin-top: 88px; }
 
-    .site-shell {
-      max-width: 1120px;
-      width: calc(100% - 32px);
-      margin-inline: auto;
+    a {
+      color: inherit;
+      text-decoration-color: rgba(39, 107, 115, 0.35);
+      text-underline-offset: 0.18em;
+      transition: color .2s ease, text-decoration-color .2s ease, background .2s ease;
     }
 
-    .hero .site-shell > * { min-width: 0; }
-
-    .glass-nav {
-      background: rgba(255, 253, 248, 0.88);
-      border-bottom: 1px solid rgba(16, 32, 39, 0.08);
-      backdrop-filter: blur(18px);
+    a:hover {
+      color: var(--teal);
+      text-decoration-color: var(--teal);
     }
 
-    .brand-mark {
-      background: linear-gradient(135deg, var(--ocean), var(--canopy) 58%, var(--sun));
-      box-shadow: 0 10px 28px rgba(11, 114, 133, 0.28);
-    }
-
-    .nav-link {
-      position: relative;
-      color: rgba(16, 32, 39, 0.72);
-      transition: color .2s ease;
-    }
-
-    .nav-link::after {
-      background: var(--coral);
-      border-radius: 999px;
-      bottom: -9px;
-      content: '';
-      height: 2px;
-      left: 0;
-      position: absolute;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform .2s ease;
-      width: 100%;
-    }
-
-    .nav-link:hover,
-    .nav-link:focus-visible { color: var(--ink); }
-    .nav-link:hover::after,
-    .nav-link:focus-visible::after { transform: scaleX(1); }
-
-    .hero {
-      isolation: isolate;
-      min-height: 100svh;
-      padding: calc(96px + env(safe-area-inset-top)) 0 72px;
-      position: relative;
-      background:
-        radial-gradient(circle at 12% 14%, rgba(245, 159, 0, 0.18), transparent 28%),
-        radial-gradient(circle at 85% 8%, rgba(232, 89, 12, 0.16), transparent 24%),
-        linear-gradient(135deg, #eef7f4 0%, #fffdf8 45%, #e9f4f1 100%);
-      overflow: clip;
-    }
-
-    .hero::before {
-      background-image:
-        linear-gradient(rgba(11, 114, 133, 0.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(11, 114, 133, 0.08) 1px, transparent 1px);
-      background-size: 56px 56px;
-      content: '';
-      inset: 0;
-      mask-image: linear-gradient(to bottom, black, transparent 80%);
-      position: absolute;
-      z-index: -3;
-    }
-
-    .orbit-field {
-      inset: 0;
-      pointer-events: none;
-      position: absolute;
-      z-index: -1;
-    }
-
-    .orbit-ring {
-      border: 1px solid rgba(11, 114, 133, 0.16);
-      border-radius: 50%;
-      height: 42vw;
-      max-height: 640px;
-      max-width: 640px;
-      min-height: 280px;
-      min-width: 280px;
-      position: absolute;
-      right: -8vw;
-      top: 11vh;
-      transform: rotate(-18deg);
-      width: 42vw;
-    }
-
-    .orbit-ring::after {
-      border: 1px dashed rgba(47, 158, 68, 0.24);
-      border-radius: inherit;
-      content: '';
-      inset: 44px;
-      position: absolute;
-    }
-
-    .satellite {
-      animation: floatSatellite 9s ease-in-out infinite;
-      filter: drop-shadow(0 18px 20px rgba(16, 32, 39, 0.18));
-      position: absolute;
-    }
-
-    .satellite.one {
-      color: var(--ocean);
-      right: 18vw;
-      top: 19vh;
-      transform: rotate(-12deg);
-      width: clamp(86px, 12vw, 154px);
-    }
-
-    .satellite.two {
-      animation-delay: -3s;
-      color: var(--coral);
-      left: 5vw;
-      opacity: .86;
-      top: 67vh;
-      transform: rotate(16deg);
-      width: clamp(58px, 9vw, 112px);
-    }
-
-    .data-ribbon {
-      background: repeating-linear-gradient(90deg, rgba(11, 114, 133, 0.0) 0 14px, rgba(11, 114, 133, 0.14) 14px 15px);
-      height: 180px;
-      left: -10%;
-      opacity: .45;
-      position: absolute;
-      right: -10%;
-      top: 58%;
-      transform: rotate(-8deg);
-      z-index: -2;
-    }
-
-    @keyframes floatSatellite {
-      0%, 100% { translate: 0 0; }
-      50% { translate: 0 -18px; }
-    }
-
-    .eyebrow {
-      color: var(--ocean);
-      font-size: .77rem;
-      font-weight: 800;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-    }
-
-    .hero-title {
-      font-size: clamp(2.65rem, 8vw, 5.9rem);
-      line-height: .93;
-      letter-spacing: 0;
+    img {
+      display: block;
       max-width: 100%;
     }
 
-    .hero-title .accent {
-      color: transparent;
-      background: linear-gradient(120deg, var(--ocean), var(--canopy) 55%, var(--coral));
-      -webkit-background-clip: text;
-      background-clip: text;
+    section { scroll-margin-top: 92px; }
+
+    .wrap {
+      width: min(1080px, calc(100% - 36px));
+      margin-inline: auto;
     }
 
-    .title-line { display: block; }
-
-    .fixed { position: fixed; }
-    .absolute { position: absolute; }
-    .relative { position: relative; }
-    .inset-x-0 { left: 0; right: 0; }
-    .top-0 { top: 0; }
-    .-bottom-5 { bottom: -1.25rem; }
-    .left-4 { left: 1rem; }
-    .right-4 { right: 1rem; }
-    .z-50 { z-index: 50; }
-    .hidden { display: none; }
-    .block { display: block; }
-    .grid { display: grid; }
-    .flex { display: flex; }
-    .inline-flex { display: inline-flex; }
-    .min-w-0 { min-width: 0; }
-    .shrink-0 { flex-shrink: 0; }
-    .w-5 { width: 1.25rem; }
-    .h-5 { height: 1.25rem; }
-    .w-8 { width: 2rem; }
-    .h-8 { height: 2rem; }
-    .w-10 { width: 2.5rem; }
-    .h-10 { height: 2.5rem; }
-    .w-11 { width: 2.75rem; }
-    .h-11 { height: 2.75rem; }
-    .w-full { width: 100%; }
-    .w-fit { width: fit-content; }
-    .max-w-2xl { max-width: 42rem; }
-    .max-w-3xl { max-width: 48rem; }
-    .max-w-4xl { max-width: 56rem; }
-    .aspect-\[4\/5\] { aspect-ratio: 4 / 5; }
-    .object-cover { object-fit: cover; }
-    .items-center { align-items: center; }
-    .justify-between { justify-content: space-between; }
-    .place-items-center { place-items: center; }
-    .flex-col { flex-direction: column; }
-    .flex-wrap { flex-wrap: wrap; }
-    .gap-2 { gap: .5rem; }
-    .gap-3 { gap: .75rem; }
-    .gap-4 { gap: 1rem; }
-    .gap-5 { gap: 1.25rem; }
-    .gap-6 { gap: 1.5rem; }
-    .gap-8 { gap: 2rem; }
-    .gap-10 { gap: 2.5rem; }
-    .space-y-2 > * + * { margin-top: .5rem; }
-    .space-y-5 > * + * { margin-top: 1.25rem; }
-    .mb-5 { margin-bottom: 1.25rem; }
-    .mb-10 { margin-bottom: 2.5rem; }
-    .mt-1 { margin-top: .25rem; }
-    .mt-2 { margin-top: .5rem; }
-    .mt-3 { margin-top: .75rem; }
-    .mt-5 { margin-top: 1.25rem; }
-    .mt-6 { margin-top: 1.5rem; }
-    .mt-8 { margin-top: 2rem; }
-    .mt-10 { margin-top: 2.5rem; }
-    .p-4 { padding: 1rem; }
-    .p-5 { padding: 1.25rem; }
-    .p-6 { padding: 1.5rem; }
-    .py-2 { padding-top: .5rem; padding-bottom: .5rem; }
-    .py-3 { padding-top: .75rem; padding-bottom: .75rem; }
-    .py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
-    .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
-    .pt-2 { padding-top: .5rem; }
-    .rounded-lg { border-radius: 8px; }
-    .border { border: 1px solid rgba(16, 32, 39, .12); }
-    .border-ink\/10 { border-color: rgba(16, 32, 39, .1); }
-    .bg-white { background: white; }
-    .bg-ink { background: var(--ink); }
-    .shadow-xl { box-shadow: 0 20px 25px -5px rgba(16, 32, 39, .14), 0 8px 10px -6px rgba(16, 32, 39, .12); }
-    .shadow-glow { box-shadow: 0 24px 70px rgba(11, 114, 133, 0.22); }
-    .font-sans { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .antialiased { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-    .truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .text-xs { font-size: .75rem; line-height: 1rem; }
-    .text-sm { font-size: .875rem; line-height: 1.25rem; }
-    .text-base { font-size: 1rem; line-height: 1.5rem; }
-    .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
-    .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
-    .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
-    .font-bold { font-weight: 700; }
-    .font-black { font-weight: 900; }
-    .leading-6 { line-height: 1.5rem; }
-    .leading-7 { line-height: 1.75rem; }
-    .leading-8 { line-height: 2rem; }
-    .uppercase { text-transform: uppercase; }
-    .tracking-\[\.12em\] { letter-spacing: .12em; }
-    .tracking-\[\.14em\] { letter-spacing: .14em; }
-    .tracking-\[\.16em\] { letter-spacing: .16em; }
-    .text-ink { color: var(--ink); }
-    .text-ocean { color: var(--ocean); }
-    .text-canopy { color: var(--canopy); }
-    .text-sun { color: var(--sun); }
-    .text-coral { color: var(--coral); }
-    .text-white { color: white; }
-    .text-ink\/62 { color: rgba(16, 32, 39, .62); }
-    .text-ink\/64 { color: rgba(16, 32, 39, .64); }
-    .text-ink\/65 { color: rgba(16, 32, 39, .65); }
-    .text-ink\/68 { color: rgba(16, 32, 39, .68); }
-    .text-ink\/70 { color: rgba(16, 32, 39, .70); }
-    .text-ink\/72 { color: rgba(16, 32, 39, .72); }
-    .text-ink\/76 { color: rgba(16, 32, 39, .76); }
-    .text-white\/54 { color: rgba(255, 255, 255, .54); }
-    .text-white\/66 { color: rgba(255, 255, 255, .66); }
-    .text-white\/75 { color: rgba(255, 255, 255, .75); }
-    .text-white\/82 { color: rgba(255, 255, 255, .82); }
-    .hover\:underline:hover { text-decoration: underline; }
-
-    i[data-feather="menu"]:empty::before { content: "☰"; font-style: normal; font-size: 1.6rem; line-height: 1; }
-
-    .section-title {
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      letter-spacing: 0;
-      line-height: 1.02;
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(251, 250, 246, 0.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px);
     }
 
-    .section-kicker {
-      color: var(--coral);
-      font-size: .76rem;
+    .nav-bar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .9rem 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      max-width: calc(100% - 3.5rem);
+      min-width: 0;
+      align-items: center;
+      gap: .8rem;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 2.8rem;
+      height: 2.8rem;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(39, 107, 115, .18);
+      border-radius: 50%;
+      background: var(--panel);
+      color: var(--teal);
       font-weight: 800;
+      letter-spacing: .03em;
+    }
+
+    .brand-name {
+      overflow: hidden;
+      color: var(--ink);
+      font-size: 1rem;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.05rem;
+      color: var(--muted);
+      font-size: .93rem;
+      font-weight: 650;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .nav-links .cv-link {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: .42rem .78rem;
+      color: var(--ink);
+      background: var(--panel);
+    }
+
+    .menu-button {
+      display: none;
+      width: 2.7rem;
+      height: 2.7rem;
+      flex: 0 0 2.7rem;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: var(--panel);
+      color: var(--ink);
+      padding: 0;
+    }
+
+    .menu-icon,
+    .menu-icon::before,
+    .menu-icon::after {
+      display: block;
+      width: 1.1rem;
+      height: 2px;
+      border-radius: 999px;
+      background: currentColor;
+      content: "";
+    }
+
+    .menu-icon {
+      position: relative;
+    }
+
+    .menu-icon::before {
+      position: absolute;
+      top: -.38rem;
+      left: 0;
+    }
+
+    .menu-icon::after {
+      position: absolute;
+      top: .38rem;
+      left: 0;
+    }
+
+    .menu-button.is-open .menu-icon {
+      background: transparent;
+    }
+
+    .menu-button.is-open .menu-icon::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .menu-button.is-open .menu-icon::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+    .mobile-menu {
+      display: none;
+      border-top: 1px solid var(--line);
+      padding: .35rem 0 .8rem;
+    }
+
+    .mobile-menu a {
+      display: block;
+      padding: .8rem 0;
+      border-bottom: 1px solid rgba(222, 219, 209, .75);
+      color: var(--ink);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 5rem 0 4.5rem;
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(circle at 18% 18%, rgba(39, 107, 115, .08), transparent 28%),
+        linear-gradient(180deg, #fbfaf6 0%, #f4efe6 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-grid > * {
+      min-width: 0;
+    }
+
+    .eyebrow {
+      max-width: 100%;
+      margin: 0 0 .8rem;
+      color: var(--teal);
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.15;
+    }
+
+    h1 {
+      max-width: 12ch;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 8vw, 5.7rem);
+      font-weight: 500;
+      letter-spacing: -.03em;
+    }
+
+    .role {
+      margin: 1.2rem 0 0;
+      color: var(--sage);
+      font-size: clamp(1.18rem, 2vw, 1.55rem);
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .affiliation {
+      margin: .45rem 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      overflow-wrap: anywhere;
+    }
+
+    .tagline {
+      max-width: 680px;
+      margin: 1.45rem 0 0;
+      color: var(--ink);
+      font-size: clamp(1.13rem, 2vw, 1.35rem);
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem;
+      margin-top: 1.7rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.75rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: .68rem 1rem;
+      background: var(--panel);
+      color: var(--ink);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      border-color: var(--teal);
+      background: var(--teal);
+      color: white;
+    }
+
+    .portrait-card {
+      display: grid;
+      width: clamp(220px, 22vw, 285px);
+      aspect-ratio: 1;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: var(--panel);
+      box-shadow: 0 18px 44px rgba(31, 42, 46, 0.10);
+      overflow: hidden;
+      padding: .45rem;
+    }
+
+    .portrait-card img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 28%;
+    }
+
+    .section {
+      padding: 4.5rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section.alt {
+      background: #f6f2ea;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 2.25rem;
+      align-items: start;
+      margin-bottom: 2rem;
+    }
+
+    .section-label {
+      color: var(--teal);
+      font-size: .82rem;
+      font-weight: 850;
       letter-spacing: .14em;
       text-transform: uppercase;
     }
 
-    .btn {
-      align-items: center;
-      border-radius: 8px;
-      display: inline-flex;
-      font-weight: 800;
-      gap: .55rem;
-      min-height: 48px;
-      padding: .82rem 1rem;
-      transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+    .section-title {
+      max-width: 780px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 4.2vw, 3.3rem);
+      font-weight: 500;
+      letter-spacing: -.02em;
     }
 
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary {
-      background: var(--ink);
-      box-shadow: 0 16px 36px rgba(16, 32, 39, 0.22);
-      color: white;
+    .content-grid {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 2.25rem;
+      align-items: start;
     }
 
-    .btn-primary:hover { background: #17333d; }
-    .btn-secondary {
-      background: white;
-      border: 1px solid rgba(16, 32, 39, 0.14);
+    .prose {
+      max-width: 790px;
       color: var(--ink);
+      font-size: 1.05rem;
     }
 
-    .chip {
-      align-items: center;
-      background: rgba(255, 255, 255, 0.74);
-      border: 1px solid rgba(16, 32, 39, 0.1);
-      border-radius: 999px;
-      display: inline-flex;
-      font-size: .82rem;
-      font-weight: 700;
-      line-height: 1.2;
-      padding: .45rem .78rem;
+    .prose p {
+      margin: 0 0 1.05rem;
     }
 
-    .research-card,
-    .impact-card,
-    .paper-card,
-    .contact-card {
-      background: rgba(255, 255, 255, 0.88);
-      border: 1px solid rgba(16, 32, 39, 0.08);
-      border-radius: 8px;
-      box-shadow: 0 18px 50px rgba(16, 32, 39, 0.08);
-      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    .quiet-note {
+      color: var(--muted);
+      font-size: .98rem;
     }
 
-    .research-card:hover,
-    .impact-card:hover,
-    .paper-card:hover,
-    .contact-card:hover {
-      border-color: rgba(11, 114, 133, 0.22);
-      box-shadow: 0 22px 58px rgba(11, 114, 133, 0.14);
-      transform: translateY(-4px);
+    .education-list {
+      display: grid;
+      gap: 1rem;
     }
 
-    .impact-number {
-      color: transparent;
-      background: linear-gradient(120deg, var(--ocean), var(--coral));
-      -webkit-background-clip: text;
-      background-clip: text;
+    .education-item {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(222, 219, 209, .9);
     }
 
-    .profile-frame {
-      border-radius: 8px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .profile-frame::after {
-      border: 1px solid rgba(255, 255, 255, 0.7);
-      border-radius: 8px;
-      content: '';
-      inset: 12px;
-      pointer-events: none;
-      position: absolute;
-    }
-
-    .science-band {
-      background:
-        linear-gradient(135deg, rgba(11, 114, 133, 0.95), rgba(47, 158, 68, 0.9)),
-        url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='rgba(255,255,255,.18)' stroke-width='1'%3E%3Cpath d='M0 80h160M80 0v160'/%3E%3Ccircle cx='80' cy='80' r='45'/%3E%3Cpath d='M20 20c42 22 78 22 120 0M20 140c42-22 78-22 120 0'/%3E%3C/g%3E%3C/svg%3E");
-      color: white;
-    }
-
-    .paper-icon {
-      align-items: center;
-      background: linear-gradient(135deg, rgba(11, 114, 133, 0.12), rgba(245, 159, 0, 0.16));
-      border-radius: 8px;
-      color: var(--ocean);
-      display: inline-flex;
-      height: 44px;
-      justify-content: center;
-      width: 44px;
-    }
-
-    .mobile-panel {
-      background: rgba(255, 253, 248, 0.98);
-      border-bottom: 1px solid rgba(16, 32, 39, 0.08);
-      max-height: calc(100svh - 72px);
-      overflow-y: auto;
-      padding-bottom: env(safe-area-inset-bottom);
-    }
-
-    .menu-toggle {
-      background: var(--ink);
-      border-color: var(--ink);
-      color: white;
-      min-height: 44px;
-      min-width: 44px;
-      flex: 0 0 44px;
-    }
-
-    .menu-toggle i { display: none; }
-    .menu-toggle::before { content: "☰"; font-size: 1.55rem; line-height: 1; }
-
-    .glass-nav a[aria-label="Dr. Kwabena Kingsley Kumah home"] {
-      max-width: calc(100% - 56px);
-    }
-
-    .mobile-link {
-      border-bottom: 1px solid rgba(16, 32, 39, 0.08);
-      color: var(--ink);
+    .education-item strong {
       display: block;
+      color: var(--ink);
+      font-size: 1.05rem;
+    }
+
+    .education-item span {
+      display: block;
+      color: var(--muted);
+      margin-top: .22rem;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55rem;
+    }
+
+    .tag {
+      border: 1px solid rgba(39, 107, 115, .18);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .72);
+      color: var(--ink);
+      font-size: .92rem;
+      font-weight: 650;
+      padding: .42rem .72rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--panel);
+      padding: 1.25rem;
+      box-shadow: 0 10px 28px rgba(31, 42, 46, .045);
+    }
+
+    .card h3 {
+      font-size: 1.12rem;
       font-weight: 800;
-      padding: 1rem 0;
     }
 
-    @media (max-width: 767px) {
-      .site-shell { width: calc(100% - 24px); }
-      .hero { padding-top: calc(86px + env(safe-area-inset-top)); }
-      .hero-title {
-        font-size: clamp(1.82rem, 8.4vw, 2.2rem);
-        line-height: 1.08;
-        max-width: 10.5ch;
-        overflow-wrap: anywhere;
+    .card p {
+      margin: .65rem 0 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .pillars {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .pillar {
+      display: grid;
+      grid-template-columns: 2.5rem minmax(0, 1fr);
+      gap: 1rem;
+      padding: 1.25rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .pillar-number {
+      display: grid;
+      width: 2.2rem;
+      height: 2.2rem;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--sand);
+      color: var(--teal);
+      font-weight: 850;
+    }
+
+    .publication-list,
+    .service-list,
+    .contact-list {
+      display: grid;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .publication-list li,
+    .service-list li,
+    .contact-list li {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(222, 219, 209, .85);
+    }
+
+    .publication-list strong {
+      display: block;
+      color: var(--ink);
+    }
+
+    .publication-list span,
+    .service-list span {
+      display: block;
+      margin-top: .25rem;
+      color: var(--muted);
+    }
+
+    .mission {
+      border: 1px solid rgba(39, 107, 115, .18);
+      border-radius: 20px;
+      background: #eef3ee;
+      padding: clamp(1.5rem, 4vw, 2.5rem);
+    }
+
+    .mission p {
+      max-width: 900px;
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.35rem, 3vw, 2.05rem);
+      line-height: 1.45;
+    }
+
+    .footer {
+      padding: 2.5rem 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 860px) {
+      .wrap {
+        width: min(100% - 28px, 1080px);
       }
-      .hero p:not(.eyebrow) {
-        font-size: 1rem;
-        line-height: 1.72;
-        max-width: 34ch;
+
+      .nav-links {
+        display: none;
       }
-      .orbit-ring { opacity: .56; right: -38vw; top: 16vh; }
-      .satellite.one { right: -18px; top: 17vh; width: 68px; }
-      .satellite.two { display: none; }
-      .btn { width: 100%; justify-content: center; }
+
+      .menu-button {
+        display: grid;
+        place-items: center;
+      }
+
+      .mobile-menu.is-open {
+        display: block;
+      }
+
+      .hero {
+        padding: 3.1rem 0 3.4rem;
+      }
+
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+      }
+
+      .portrait-card {
+        order: -1;
+        width: clamp(145px, 44vw, 190px);
+      }
+
+      .section-head,
+      .content-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        flex: 1 1 auto;
+      }
     }
 
-    @media (min-width: 640px) {
-      .sm\:flex-row { flex-direction: row; }
-      .sm\:flex-wrap { flex-wrap: wrap; }
-      .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .sm\:left-auto { left: auto; }
-      .sm\:p-8 { padding: 2rem; }
-      .sm\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
-      .sm\:text-xl { font-size: 1.25rem; line-height: 1.75rem; }
-      .sm\:w-72 { width: 18rem; }
-    }
+    @media (max-width: 520px) {
+      .nav-bar {
+        gap: .55rem;
+        padding-right: 3.25rem;
+      }
 
-    @media (min-width: 768px) {
-      .md\:flex-row { flex-direction: row; }
-      .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .md\:items-center { align-items: center; }
-      .md\:items-end { align-items: flex-end; }
-      .md\:justify-between { justify-content: space-between; }
-    }
+      .brand {
+        max-width: 100%;
+        gap: .6rem;
+      }
 
-    @media (min-width: 1024px) {
-      .lg\:hidden { display: none; }
-      .lg\:flex { display: flex; }
-      .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-      .lg\:grid-cols-\[1\.1fr_\.9fr\] { grid-template-columns: 1.1fr .9fr; }
-      .lg\:grid-cols-\[\.78fr_1\.22fr\] { grid-template-columns: .78fr 1.22fr; }
-      .lg\:grid-cols-\[\.9fr_1\.1fr\] { grid-template-columns: .9fr 1.1fr; }
-      .lg\:items-start { align-items: flex-start; }
-      .lg\:items-center { align-items: center; }
-      .lg\:items-end { align-items: flex-end; }
-    }
+      .menu-button {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--ink);
+        color: white;
+        border-color: var(--ink);
+      }
 
-    @media (min-width: 1280px) {
-      .xl\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .brand-mark {
+        width: 2.45rem;
+        height: 2.45rem;
+        font-size: .9rem;
+      }
+
+      .brand-name {
+        max-width: min(190px, calc(100vw - 7.4rem));
+        font-size: .92rem;
+      }
+
+      .eyebrow {
+        font-size: .72rem;
+        letter-spacing: .12em;
+      }
+
+      .affiliation,
+      .tagline {
+        max-width: 31ch;
+      }
+
+      h1 {
+        max-width: 11ch;
+        font-size: clamp(2.65rem, 14vw, 4rem);
+      }
+
+      .role {
+        font-size: 1.12rem;
+      }
+
+      .button-row {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       *, *::before, *::after {
+        transition-duration: .01ms !important;
         animation-duration: .01ms !important;
         animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
       }
     }
   </style>
 </head>
 
-<body class="font-sans antialiased">
-  <header class="glass-nav fixed inset-x-0 top-0 z-50">
-    <div class="site-shell">
-      <div class="flex items-center justify-between py-3">
-        <a href="#home" class="flex min-w-0 items-center gap-3" aria-label="Dr. Kwabena Kingsley Kumah home">
-          <span class="brand-mark grid h-11 w-11 shrink-0 place-items-center rounded-lg text-sm font-black text-white">KK</span>
-          <span class="truncate text-base font-black text-ink sm:text-lg">Dr. Kwabena Kingsley Kumah</span>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="nav-bar">
+        <a class="brand" href="#top" aria-label="Kwabena Kingsley Kumah home">
+          <span class="brand-mark">KK</span>
+          <span class="brand-name">Kwabena Kingsley Kumah</span>
         </a>
 
-        <nav class="hidden items-center gap-5 text-sm font-bold lg:flex" aria-label="Primary navigation">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#science" class="nav-link">Science</a>
-          <a href="#impact" class="nav-link">Impact</a>
-          <a href="#publications" class="nav-link">Publications</a>
-          <a href="#service" class="nav-link">Service</a>
-          <a href="#contact" class="nav-link">Contact</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#mission">Mission</a>
+          <a class="cv-link" href="assets/cv/Kwabena_Kingsley_Kumah_CV.pdf">CV</a>
+          <a href="#contact">Contact</a>
         </nav>
 
-        <button class="menu-toggle grid rounded-lg border border-ink/10 bg-white place-items-center lg:hidden" id="mobile-menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
-          <i data-feather="menu" class="h-5 w-5"></i>
-        </button>
+        <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><span class="menu-icon" aria-hidden="true"></span></button>
       </div>
-    </div>
 
-    <div class="mobile-panel hidden lg:hidden" id="mobile-menu">
-      <nav class="site-shell py-2" aria-label="Mobile navigation">
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#science" class="mobile-link">Science</a>
-        <a href="#impact" class="mobile-link">Impact</a>
-        <a href="#publications" class="mobile-link">Publications</a>
-        <a href="#service" class="mobile-link">Service</a>
-        <a href="#contact" class="mobile-link">Contact</a>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#mission">Mission</a>
+        <a href="assets/cv/Kwabena_Kingsley_Kumah_CV.pdf">CV</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="orbit-field" aria-hidden="true">
-        <div class="orbit-ring"></div>
-        <div class="data-ribbon"></div>
-        <svg class="satellite one" viewBox="0 0 180 100" fill="none">
-          <path d="M74 42h32v18H74z" fill="currentColor"/>
-          <path d="M58 34h18v34H58zM104 34h18v34h-18z" fill="#fff" stroke="currentColor" stroke-width="6"/>
-          <path d="M12 26h42v50H12zM126 26h42v50h-42z" fill="#fff" stroke="currentColor" stroke-width="7"/>
-          <path d="M34 26v50M148 26v50M90 24v18M90 60v20" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
-          <circle cx="90" cy="51" r="7" fill="#f59f00"/>
-        </svg>
-        <svg class="satellite two" viewBox="0 0 180 100" fill="none">
-          <path d="M74 42h32v18H74z" fill="currentColor"/>
-          <path d="M14 28h42v44H14zM124 28h42v44h-42z" fill="#fff" stroke="currentColor" stroke-width="7"/>
-          <path d="M56 50h68M90 22v20M90 60v18" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
-          <circle cx="90" cy="51" r="8" fill="#0b7285"/>
-        </svg>
-      </div>
-
-      <div class="site-shell grid items-center gap-10 lg:grid-cols-[1.1fr_.9fr]">
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
         <div>
-          <p class="eyebrow mb-5">Remote sensing scientist · Precipitation retrieval specialist</p>
-          <h1 class="hero-title max-w-4xl font-black text-ink">
-            <span class="title-line">Satellite algorithms</span>
-            <span class="title-line">for</span>
-            <span class="title-line accent">precipitation,</span>
-            <span class="title-line accent">snow, ice, and</span>
-            <span class="title-line accent">climate records.</span>
-          </h1>
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-ink/76 sm:text-xl">
-            I build and evaluate Earth-observation algorithms that combine physics, machine learning, infrared and microwave observations, in-situ networks, and reanalysis to improve precipitation and cryosphere records.
-          </p>
+          <p class="eyebrow">Remote sensing and precipitation retrieval</p>
+          <h1>Kwabena Kingsley Kumah</h1>
+          <p class="role">Postdoctoral Research Associate</p>
+          <p class="affiliation">Department of Hydrology &amp; Atmospheric Sciences, University of Arizona</p>
+          <p class="tagline">Remote sensing scientist developing and evaluating satellite-based precipitation and cryosphere records.</p>
 
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <a href="#publications" class="btn btn-primary">
-              <i data-feather="book-open" class="h-5 w-5"></i>
-              View publications
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <i data-feather="send" class="h-5 w-5"></i>
-              Contact me
-            </a>
-            <a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank" rel="noopener" class="btn btn-secondary">
-              <i data-feather="external-link" class="h-5 w-5"></i>
-              Google Scholar
-            </a>
-          </div>
-
-          <div class="mt-8 flex flex-wrap gap-2">
-            <span class="chip">NASA GPCP</span>
-            <span class="chip">AVHRR high latitudes</span>
-            <span class="chip">GPM IMERG evaluation</span>
-            <span class="chip">Geospatial AI</span>
+          <div class="button-row" aria-label="Profile links">
+            <a class="button primary" href="mailto:kkumah@arizona.edu">Email</a>
+            <a class="button" href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="button" href="https://orcid.org/0000-0001-6865-0665" target="_blank" rel="noopener">ORCID</a>
+            <a class="button" href="https://github.com/king2coding" target="_blank" rel="noopener">GitHub</a>
+            <a class="button" href="assets/cv/Kwabena_Kingsley_Kumah_CV.pdf">CV</a>
           </div>
         </div>
 
-        <div class="relative">
-          <div class="profile-frame shadow-glow">
-            <img src="profile.jpeg" alt="Dr. Kwabena Kingsley Kumah" class="aspect-[4/5] w-full object-cover" width="900" height="1125" fetchpriority="high" />
-          </div>
-          <div class="absolute -bottom-5 left-4 right-4 rounded-lg bg-white p-4 shadow-xl sm:left-auto sm:w-72">
-            <p class="text-xs font-black uppercase tracking-[.14em] text-coral">Current appointment</p>
-            <p class="mt-1 font-black text-ink">Postdoctoral Research Scholar</p>
-            <p class="text-sm text-ink/65">University of Arizona</p>
+        <aside class="portrait-card" aria-label="Profile portrait">
+          <img src="profile.jpeg" alt="Dr. Kwabena Kingsley Kumah" width="900" height="1125" />
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-label">About</div>
+          <h2 class="section-title">A research profile centered on precipitation, satellites, and climate records.</h2>
+        </div>
+
+        <div class="content-grid">
+          <div class="quiet-note">Bio</div>
+          <div class="prose">
+            <p>Dr. Kwabena Kingsley Kumah is a remote sensing and precipitation retrieval scientist specializing in satellite algorithm development, precipitation-product evaluation, geospatial machine learning, uncertainty analysis, and climate-data records.</p>
+            <p>He is currently a Postdoctoral Research Associate in the Department of Hydrology &amp; Atmospheric Sciences at the University of Arizona, where he contributes to NASA-supported precipitation research relevant to GPCP, IMERG, AVHRR-based high-latitude precipitation retrieval, ocean precipitation evaluation, polar precipitation benchmarking, and satellite/reanalysis product validation.</p>
+            <p>His current work includes AVHRR infrared retrievals, diagnostic evaluation of satellite precipitation products, uncertainty-aware validation, and applications in ocean and polar precipitation. This research addresses environments where precipitation is difficult to observe directly and where satellite records must be carefully interpreted.</p>
+            <p>Dr. Kumah completed doctoral work at the University of Twente / ITC, where he developed high-spatiotemporal rainfall estimation methods using commercial microwave link attenuation and MSG satellite observations. That earlier work focused on improving rainfall information in data-sparse regions in Africa, where gauges and weather radar networks are often limited.</p>
+            <p>Across these efforts, his broader motivation is to improve precipitation information where observations are sparse, uncertain, or difficult to obtain.</p>
+            <div class="button-row">
+              <a class="button" href="assets/cv/Kwabena_Kingsley_Kumah_CV.pdf">View CV</a>
+              <a class="button" href="#contact">Contact</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="bg-white py-20">
-      <div class="site-shell grid gap-10 lg:grid-cols-[.78fr_1.22fr] lg:items-start">
-        <div>
-          <p class="section-kicker">About</p>
-          <h2 class="section-title mt-3 font-black text-ink">A scientist working where weather, water, and satellites meet.</h2>
-        </div>
-        <div class="space-y-5 text-lg leading-8 text-ink/72">
-          <p>
-            Dr. Kwabena Kingsley Kumah is a remote sensing scientist and precipitation retrieval specialist focused on satellite-based precipitation estimation, high-latitude retrieval algorithms, snow and ice climate records, and multi-source evaluation of operational precipitation products.
-          </p>
-          <p>
-            His research bridges algorithm development, satellite data analysis, physical modeling, machine learning, and product validation across environments ranging from sub-Saharan Africa to global polar regions.
-          </p>
-          <p>
-            At the University of Arizona, he contributes to NASA-funded precipitation research, including AVHRR-based high-latitude precipitation algorithm development, diagnostic evaluation, bias correction, uncertainty analysis, and validation activities relevant to GPCP and future satellite precipitation records.
-          </p>
-          <div class="flex flex-wrap gap-2 pt-2">
-            <span class="chip">ORCID: 0000-0001-6865-0665</span>
-            <span class="chip">Tucson, Arizona</span>
-            <span class="chip">Python · Xarray · Dask · ML</span>
-            <span class="chip">AVHRR · MSG SEVIRI · GPM · GRACE</span>
+    <section class="section alt" id="education">
+      <div class="wrap content-grid">
+        <div class="section-label">Education</div>
+        <div class="education-list">
+          <div class="education-item">
+            <strong>Ph.D., GIS &amp; Earth Observation, University of Twente / ITC, 2022</strong>
+            <span>Dissertation: High-Spatiotemporal Resolution Rainfall Estimation from Satellite and Commercial Microwave Link Data</span>
+          </div>
+          <div class="education-item">
+            <strong>M.Sc., GIS &amp; Earth Observation, Water Resources &amp; Environmental Management, University of Twente / ITC, 2016</strong>
+          </div>
+          <div class="education-item">
+            <strong>B.Sc., Environmental Science, University of Cape Coast, Ghana, 2012</strong>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="science" class="py-20">
-      <div class="site-shell">
-        <div class="mb-10 max-w-3xl">
-          <p class="section-kicker">Science portfolio</p>
-          <h2 class="section-title mt-3 font-black text-ink">Original contributions with practical climate-data impact.</h2>
+    <section class="section" id="topics">
+      <div class="wrap content-grid">
+        <div class="section-label">Research topics</div>
+        <div class="tag-list">
+          <span class="tag">Satellite precipitation retrieval</span>
+          <span class="tag">Remote sensing</span>
+          <span class="tag">GPCP / IMERG evaluation</span>
+          <span class="tag">AVHRR infrared retrievals</span>
+          <span class="tag">High-latitude precipitation</span>
+          <span class="tag">Ocean precipitation validation</span>
+          <span class="tag">Antarctic snowfall</span>
+          <span class="tag">GRACE mass-budget constraints</span>
+          <span class="tag">Commercial microwave links</span>
+          <span class="tag">Geospatial machine learning</span>
+          <span class="tag">Climate data records</span>
+          <span class="tag">Hydrology and water resources</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-label">Projects</div>
+          <h2 class="section-title">Featured work across satellite retrieval, validation, and data-sparse rainfall monitoring.</h2>
         </div>
 
-        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          <article class="research-card p-6">
-            <i data-feather="cloud-rain" class="mb-5 h-8 w-8 text-ocean"></i>
-            <h3 class="text-xl font-black text-ink">AVHRR High-Latitude Precipitation</h3>
-            <p class="mt-3 leading-7 text-ink/68">Lead development and diagnostic evaluation of an AVHRR-based precipitation retrieval product for global regions poleward of 55 degrees latitude.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>AVHRR High-Latitude Precipitation Retrieval</h3>
+            <p>Development and diagnostic evaluation of AVHRR-based precipitation retrievals for high-latitude regions where conventional satellite precipitation estimates remain uncertain.</p>
           </article>
-          <article class="research-card p-6">
-            <i data-feather="crosshair" class="mb-5 h-8 w-8 text-coral"></i>
-            <h3 class="text-xl font-black text-ink">Limb Darkening Correction</h3>
-            <p class="mt-3 leading-7 text-ink/68">Developed scan-angle bias correction for AVHRR brightness temperatures using latitude, season, cloud type, and surface-type dependencies.</p>
+          <article class="card">
+            <h3>AVHRR Limb-Darkening Correction</h3>
+            <p>A physically informed correction framework for reducing scan-angle-related brightness-temperature bias in AVHRR infrared observations used for precipitation retrieval.</p>
           </article>
-          <article class="research-card p-6">
-            <i data-feather="database" class="mb-5 h-8 w-8 text-canopy"></i>
-            <h3 class="text-xl font-black text-ink">GMASI Snow &amp; Ice Extension</h3>
-            <p class="mt-3 leading-7 text-ink/68">Extended the Global Merged Atmospheric Surface Index snow and ice cover record back to 1980-1987 using machine learning and reanalysis-based retrospective mapping.</p>
+          <article class="card">
+            <h3>Integrated Ocean Precipitation Evaluation</h3>
+            <p>A multi-reference validation framework comparing GPCP, IMERG, ERA5, and MERRA-2 with PAL, moored buoys, atolls, and OceanRAIN across daily to climatological scales.</p>
           </article>
-          <article class="research-card p-6">
-            <i data-feather="activity" class="mb-5 h-8 w-8 text-sun"></i>
-            <h3 class="text-xl font-black text-ink">Ocean Precipitation Validation</h3>
-            <p class="mt-3 leading-7 text-ink/68">Developing a multi-reference validation framework for GPCP, IMERG, ERA5, and MERRA-2 against complementary in-situ references.</p>
+          <article class="card">
+            <h3>Antarctic Snowfall Mass-Budget Benchmarking</h3>
+            <p>A physically constrained assessment of Antarctic precipitation using GRACE-based storage change, ice discharge, basal melt, and sublimation inputs across IMBIE drainage basins.</p>
           </article>
-          <article class="research-card p-6">
-            <i data-feather="map" class="mb-5 h-8 w-8 text-ocean"></i>
-            <h3 class="text-xl font-black text-ink">Antarctic Snowfall Reassessment</h3>
-            <p class="mt-3 leading-7 text-ink/68">Lead analyst for basin-scale Antarctic snowfall reassessment using GRACE mass-budget constraints across IMBIE drainage basins.</p>
+          <article class="card">
+            <h3>GMASI Snow and Ice Cover Extension</h3>
+            <p>A machine-learning extension of the Global Merged Analysis of Snow and Ice record back to 1980-1987 using ERA5-derived surface variables.</p>
           </article>
-          <article class="research-card p-6">
-            <i data-feather="radio" class="mb-5 h-8 w-8 text-coral"></i>
-            <h3 class="text-xl font-black text-ink">CML-Satellite Rainfall Retrieval</h3>
-            <p class="mt-3 leading-7 text-ink/68">Developed rainfall estimation algorithms combining Commercial Microwave Links with MSG SEVIRI observations for rainfall monitoring in Africa.</p>
+          <article class="card">
+            <h3>CML-Satellite Rainfall Retrieval for Africa</h3>
+            <p>Rainfall detection and mapping methods combining commercial microwave link attenuation with Meteosat cloud-top observations for data-sparse regions.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="impact" class="science-band py-20">
-      <div class="site-shell">
-        <div class="grid gap-8 lg:grid-cols-[.9fr_1.1fr] lg:items-end">
+    <section class="section" id="research">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-label">Research</div>
+          <h2 class="section-title">Three linked questions guide the work.</h2>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar">
+            <div class="pillar-number">1</div>
+            <div class="prose">
+              <h3>Improving satellite precipitation retrievals</h3>
+              <p>Dr. Kumah works on AVHRR-based high-latitude precipitation retrievals, limb-darkening correction, machine learning, and diagnostic evaluation relevant to long-term precipitation records such as GPCP and IMERG. This work focuses on improving the physical consistency and interpretability of satellite precipitation information in challenging environments.</p>
+            </div>
+          </article>
+
+          <article class="pillar">
+            <div class="pillar-number">2</div>
+            <div class="prose">
+              <h3>Evaluating precipitation products across scales and observing regimes</h3>
+              <p>His validation work compares products including GPCP, IMERG, ERA5, and MERRA-2 with independent references such as PAL, moored buoys, atolls, OceanRAIN, and Antarctic mass-budget constraints. The emphasis is on uncertainty-aware validation across daily, seasonal, and climatological scales.</p>
+            </div>
+          </article>
+
+          <article class="pillar">
+            <div class="pillar-number">3</div>
+            <div class="prose">
+              <h3>Expanding rainfall information in data-sparse regions</h3>
+              <p>Earlier research combined commercial microwave link attenuation with MSG SEVIRI cloud-top observations to support rainfall detection and mapping in Sub-Saharan Africa. This work reflects the broader challenge of precipitation monitoring where gauge and radar networks are limited, including rainfall-monitoring relevance for Ghana and other African regions.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="publications">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-label">Publications</div>
+          <h2 class="section-title">Selected publications and data products.</h2>
+        </div>
+
+        <div class="content-grid">
+          <div class="quiet-note">Selected work</div>
           <div>
-            <p class="text-xs font-black uppercase tracking-[.16em] text-white/75">Research impact</p>
-            <h2 class="section-title mt-3 font-black">Built for rigorous satellite-product evaluation.</h2>
-          </div>
-          <p class="text-lg leading-8 text-white/82">
-            The work supports precipitation retrieval, climate data records, high-latitude hydrology, cryosphere monitoring, and practical rainfall applications where ground observations are sparse.
-          </p>
-        </div>
+            <ul class="publication-list">
+              <li>
+                <strong>Kumah, K. K., Zandi, O., &amp; Behrangi, A. (2025).</strong>
+                <span>Retrospective Mapping of Global Snow and Ice Cover Beyond the Satellite Observational Era. <em>Earth and Space Science.</em> <a href="https://doi.org/10.1029/2024EA004171" target="_blank" rel="noopener">DOI</a></span>
+              </li>
+              <li>
+                <strong>Kumah, K. K., Maathuis, B. H. P., Hoedjes, J. C. B., &amp; Su, Z. (2022).</strong>
+                <span>Near real-time estimation of high spatiotemporal resolution rainfall from cloud-top properties of MSG and CML rainfall intensities. <em>Atmospheric Research.</em> <a href="https://doi.org/10.1016/j.atmosres.2022.106357" target="_blank" rel="noopener">DOI</a></span>
+              </li>
+              <li>
+                <strong>Kumah et al. (2021).</strong>
+                <span>The MSG Technique. <em>Remote Sensing.</em> <a href="https://doi.org/10.3390/rs13163274" target="_blank" rel="noopener">DOI</a></span>
+              </li>
+              <li>
+                <strong>Kumah et al. (2021).</strong>
+                <span>Rain Area Detection in South-Western Kenya. <em>Sensors.</em> <a href="https://doi.org/10.3390/s21103547" target="_blank" rel="noopener">DOI</a></span>
+              </li>
+              <li>
+                <strong>Kumah et al. (2020).</strong>
+                <span>Combining MWL and MSG SEVIRI Satellite Signals. <em>Atmosphere.</em></span>
+              </li>
+              <li>
+                <strong>Open dataset.</strong>
+                <span>Global Snow and Ice Cover 1980-1987, University of Arizona Research Data Repository. <a href="https://doi.org/10.25422/azu.data.28012532.v1" target="_blank" rel="noopener">Dataset DOI</a></span>
+              </li>
+            </ul>
 
-        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="impact-card p-6 text-ink">
-            <div class="impact-number text-4xl font-black">124+</div>
-            <p class="mt-2 font-bold text-ink/68">Google Scholar citations</p>
-          </div>
-          <div class="impact-card p-6 text-ink">
-            <div class="impact-number text-4xl font-black">7</div>
-            <p class="mt-2 font-bold text-ink/68">h-index</p>
-          </div>
-          <div class="impact-card p-6 text-ink">
-            <div class="impact-number text-4xl font-black">6</div>
-            <p class="mt-2 font-bold text-ink/68">i10-index</p>
-          </div>
-          <div class="impact-card p-6 text-ink">
-            <div class="impact-number text-4xl font-black">1980-2023</div>
-            <p class="mt-2 font-bold text-ink/68">Climate data applications</p>
+            <div class="button-row">
+              <a class="button primary" href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank" rel="noopener">View full publication list on Google Scholar</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="expertise" class="bg-white py-20">
-      <div class="site-shell grid gap-10 lg:grid-cols-2">
-        <div>
-          <p class="section-kicker">Technical expertise</p>
-          <h2 class="section-title mt-3 font-black text-ink">Algorithms, validation, and reproducible geospatial pipelines.</h2>
+    <section class="section" id="service">
+      <div class="wrap content-grid">
+        <div class="section-label">Service / recognition</div>
+        <ul class="service-list">
+          <li>Peer reviewer for <span>Journal of Hydrometeorology, Hydrology and Earth System Sciences, Earth System Science Data, Remote Sensing, and JGR: Atmospheres</span></li>
+          <li>Swiss National Science Foundation <span>External proposal reviewer</span></li>
+          <li>COST Action SmartSense <span>Working Group 3 member</span></li>
+          <li>Media coverage <span>Research coverage related to mobile-phone network signals and rainfall monitoring</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section alt" id="mission">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-label">Mission</div>
+          <h2 class="section-title">Why this work matters.</h2>
         </div>
-        <div class="grid gap-3 sm:grid-cols-2">
-          <div class="research-card p-5"><strong>Satellite retrieval</strong><p class="mt-2 text-sm leading-6 text-ink/65">AVHRR, MSG SEVIRI, MODIS, GPM IMERG, GRACE</p></div>
-          <div class="research-card p-5"><strong>Machine learning</strong><p class="mt-2 text-sm leading-6 text-ink/65">Random Forest, XGBoost, neural networks, uncertainty diagnostics</p></div>
-          <div class="research-card p-5"><strong>Data systems</strong><p class="mt-2 text-sm leading-6 text-ink/65">NetCDF, HDF5, GRIB, GeoTIFF, HPC processing</p></div>
-          <div class="research-card p-5"><strong>Python geoscience</strong><p class="mt-2 text-sm leading-6 text-ink/65">Xarray, Dask, Rasterio, GeoPandas, GDAL, Cartopy</p></div>
+        <div class="mission">
+          <p>Precipitation is essential for weather, climate, water resources, agriculture, and hazard monitoring, but it remains difficult to measure over oceans, polar regions, complex terrain, and data-sparse regions. My work aims to improve the reliability, transparency, and usefulness of satellite precipitation and cryosphere records by combining physical understanding, machine learning, independent observations, and careful validation. The broader goal is to support better climate monitoring, hydrologic understanding, weather-risk assessment, and water-resource decision-making.</p>
         </div>
       </div>
     </section>
 
-    <section id="publications" class="py-20">
-      <div class="site-shell">
-        <div class="mb-10 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-          <div class="max-w-3xl">
-            <p class="section-kicker">Selected publications &amp; data products</p>
-            <h2 class="section-title mt-3 font-black text-ink">Peer-reviewed work and reusable climate datasets.</h2>
-          </div>
-          <a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank" rel="noopener" class="btn btn-secondary w-fit">
-            Scholar profile
-            <i data-feather="external-link" class="h-5 w-5"></i>
-          </a>
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">Collaborations in satellite precipitation, validation, and cryosphere applications.</h2>
         </div>
 
-        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          <article class="paper-card p-6">
-            <span class="paper-icon"><i data-feather="book-open"></i></span>
-            <p class="mt-5 text-sm font-black uppercase tracking-[.12em] text-ocean">Earth and Space Science · 2025</p>
-            <h3 class="mt-3 text-lg font-black leading-6 text-ink">Retrospective Mapping of Global Snow and Ice Cover Beyond the Satellite Observational Era</h3>
-            <p class="mt-3 text-sm text-ink/62">Kumah, Zandi &amp; Behrangi.</p>
-            <a href="https://doi.org/10.1029/2024EA004171" target="_blank" rel="noopener" class="mt-5 inline-flex font-black text-coral hover:underline">Read DOI</a>
-          </article>
-          <article class="paper-card p-6">
-            <span class="paper-icon"><i data-feather="cloud-rain"></i></span>
-            <p class="mt-5 text-sm font-black uppercase tracking-[.12em] text-ocean">Atmospheric Research · 2022</p>
-            <h3 class="mt-3 text-lg font-black leading-6 text-ink">Near-real-time estimation of high spatiotemporal resolution rainfall from MSG and CML rainfall intensities</h3>
-            <p class="mt-3 text-sm text-ink/62">Kumah, Maathuis, Hoedjes &amp; Su.</p>
-            <a href="https://doi.org/10.1016/j.atmosres.2022.106357" target="_blank" rel="noopener" class="mt-5 inline-flex font-black text-coral hover:underline">Read DOI</a>
-          </article>
-          <article class="paper-card p-6">
-            <span class="paper-icon"><i data-feather="radio"></i></span>
-            <p class="mt-5 text-sm font-black uppercase tracking-[.12em] text-ocean">Remote Sensing · 2021</p>
-            <h3 class="mt-3 text-lg font-black leading-6 text-ink">The MSG Technique: Improving Commercial Microwave Link Rainfall Intensity</h3>
-            <p class="mt-3 text-sm text-ink/62">Kumah et al.</p>
-            <a href="https://doi.org/10.3390/rs13163274" target="_blank" rel="noopener" class="mt-5 inline-flex font-black text-coral hover:underline">Read DOI</a>
-          </article>
-          <article class="paper-card p-6">
-            <span class="paper-icon"><i data-feather="map"></i></span>
-            <p class="mt-5 text-sm font-black uppercase tracking-[.12em] text-ocean">Sensors · 2021</p>
-            <h3 class="mt-3 text-lg font-black leading-6 text-ink">Rain Area Detection in South-Western Kenya Using Multispectral Satellite Data</h3>
-            <p class="mt-3 text-sm text-ink/62">Kumah et al.</p>
-            <a href="https://doi.org/10.3390/s21103547" target="_blank" rel="noopener" class="mt-5 inline-flex font-black text-coral hover:underline">Read DOI</a>
-          </article>
-          <article class="paper-card p-6">
-            <span class="paper-icon"><i data-feather="database"></i></span>
-            <p class="mt-5 text-sm font-black uppercase tracking-[.12em] text-ocean">Dataset · 2024</p>
-            <h3 class="mt-3 text-lg font-black leading-6 text-ink">Global Snow and Ice Cover 1980-1987: Extended GMASI Dataset</h3>
-            <p class="mt-3 text-sm text-ink/62">Kumah, Zandi &amp; Behrangi.</p>
-            <a href="https://doi.org/10.25422/azu.data.28012532.v1" target="_blank" rel="noopener" class="mt-5 inline-flex font-black text-coral hover:underline">View Dataset DOI</a>
-          </article>
-          <article class="paper-card p-6">
-            <span class="paper-icon"><i data-feather="file-text"></i></span>
-            <p class="mt-5 text-sm font-black uppercase tracking-[.12em] text-ocean">Ph.D. Thesis · 2022</p>
-            <h3 class="mt-3 text-lg font-black leading-6 text-ink">Near-real-time rainfall detection and estimation from CML and MSG data</h3>
-            <p class="mt-3 text-sm text-ink/62">University of Twente / ITC.</p>
-            <a href="https://doi.org/10.3990/1.9789036554589" target="_blank" rel="noopener" class="mt-5 inline-flex font-black text-coral hover:underline">Read Thesis DOI</a>
-          </article>
-        </div>
-      </div>
-    </section>
+        <div class="content-grid">
+          <div class="quiet-note">University of Arizona<br />Tucson, Arizona</div>
+          <div class="prose">
+            <p>I welcome collaborations related to satellite precipitation retrieval, product validation, high-latitude precipitation, ocean precipitation, cryosphere applications, and rainfall monitoring in data-sparse regions.</p>
 
-    <section id="service" class="bg-white py-20">
-      <div class="site-shell">
-        <div class="mb-10 max-w-3xl">
-          <p class="section-kicker">Service &amp; recognition</p>
-          <h2 class="section-title mt-3 font-black text-ink">A research profile with public reach and professional service.</h2>
-        </div>
-        <div class="grid gap-5 md:grid-cols-3">
-          <div class="research-card p-6">
-            <h3 class="text-xl font-black text-ink">Peer Review</h3>
-            <p class="mt-3 leading-7 text-ink/68">Reviewer for Earth System Science Data, Remote Sensing, HESS, JGR: Atmospheres, and Journal of Hydrometeorology.</p>
-          </div>
-          <div class="research-card p-6">
-            <h3 class="text-xl font-black text-ink">Research Service</h3>
-            <p class="mt-3 leading-7 text-ink/68">Grant proposal reviewer for the Swiss National Science Foundation and University of Arizona student research competition judge.</p>
-          </div>
-          <div class="research-card p-6">
-            <h3 class="text-xl font-black text-ink">Collaborations</h3>
-            <p class="mt-3 leading-7 text-ink/68">Collaborations and affiliations include NASA GPCP, NASA/JPL, NASA/GSFC, EUMETSAT/H-SAF, Rainboo, TAHMO, TU Delft, and University of Twente.</p>
-          </div>
-        </div>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:kkumah@arizona.edu">kkumah@arizona.edu</a> / <a href="mailto:kkumahkwabena@gmail.com">kkumahkwabena@gmail.com</a></li>
+              <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank" rel="noopener">scholar profile</a></li>
+              <li><strong>ORCID:</strong> <a href="https://orcid.org/0000-0001-6865-0665" target="_blank" rel="noopener">0000-0001-6865-0665</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/king2coding" target="_blank" rel="noopener">king2coding</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kkumah/" target="_blank" rel="noopener">linkedin.com/in/kkumah</a></li>
+            </ul>
 
-        <div class="mt-8 grid gap-5 md:grid-cols-3">
-          <a href="https://www.itc.nl/news/2022/10/196298/itc-algorithm-detects-rainfall-in-rural-africa" target="_blank" rel="noopener" class="research-card block p-6">
-            <h3 class="font-black text-ink">ITC News</h3>
-            <p class="mt-2 text-sm leading-6 text-ink/64">Feature on MSG-CML rainfall research.</p>
-          </a>
-          <a href="https://physics.aps.org/articles/v14/161" target="_blank" rel="noopener" class="research-card block p-6">
-            <h3 class="font-black text-ink">APS Physics Magazine</h3>
-            <p class="mt-2 text-sm leading-6 text-ink/64">Coverage of rainfall detection using telecom links and satellite data.</p>
-          </a>
-          <a href="https://innovationorigins.com/en/selected/researcher-from-ut-developed-an-algorithm-to-predict-rainfall-in-rural-africa/" target="_blank" rel="noopener" class="research-card block p-6">
-            <h3 class="font-black text-ink">Innovation Origins</h3>
-            <p class="mt-2 text-sm leading-6 text-ink/64">Coverage of algorithm development for rainfall prediction in rural Africa.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-20">
-      <div class="site-shell grid gap-8 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
-        <div>
-          <p class="section-kicker">Contact</p>
-          <h2 class="section-title mt-3 font-black text-ink">For collaborations in precipitation, cryosphere, and satellite climate records.</h2>
-          <p class="mt-5 text-lg leading-8 text-ink/70">Department of Hydrology &amp; Atmospheric Sciences, University of Arizona, Tucson, AZ.</p>
-        </div>
-
-        <div class="contact-card p-6 sm:p-8">
-          <div class="grid gap-4 sm:grid-cols-2">
-            <a href="mailto:kkumah@arizona.edu?subject=Research%20collaboration%20inquiry" class="btn btn-primary">
-              <i data-feather="mail" class="h-5 w-5"></i>
-              Email me
-            </a>
-            <a href="https://www.linkedin.com/in/kkumah/" target="_blank" rel="noopener" class="btn btn-secondary">
-              <i data-feather="linkedin" class="h-5 w-5"></i>
-              LinkedIn
-            </a>
-            <a href="https://orcid.org/0000-0001-6865-0665" target="_blank" rel="noopener" class="btn btn-secondary">
-              <i data-feather="shield" class="h-5 w-5"></i>
-              ORCID
-            </a>
-            <a href="https://github.com/king2coding" target="_blank" rel="noopener" class="btn btn-secondary">
-              <i data-feather="github" class="h-5 w-5"></i>
-              GitHub
-            </a>
-          </div>
-          <div class="mt-6 space-y-2 text-ink/70">
-            <p><strong class="text-ink">University email:</strong> <a class="hover:underline" href="mailto:kkumah@arizona.edu">kkumah@arizona.edu</a></p>
-            <p><strong class="text-ink">Personal email:</strong> <a class="hover:underline" href="mailto:kkumahkwabena@gmail.com">kkumahkwabena@gmail.com</a></p>
+            <div class="button-row">
+              <a class="button primary" href="mailto:kkumah@arizona.edu?subject=Research%20collaboration%20inquiry">Email me</a>
+              <a class="button" href="assets/cv/Kwabena_Kingsley_Kumah_CV.pdf">Download CV</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-ink py-10 text-white">
-    <div class="site-shell flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-      <div>
-        <a href="#home" class="flex items-center gap-3 text-xl font-black text-white">
-          <span class="brand-mark grid h-10 w-10 place-items-center rounded-lg text-sm">KK</span>
-          Dr. Kwabena Kingsley Kumah
-        </a>
-        <p class="mt-3 text-white/66">Remote Sensing · Precipitation Retrieval · Earth Observation · Geospatial AI</p>
-      </div>
-      <p class="text-sm text-white/54">&copy; <span id="year"></span> Dr. Kwabena Kingsley Kumah. All rights reserved.</p>
+  <footer class="footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Kwabena Kingsley Kumah</span>
+      <span>Remote sensing, precipitation retrieval, and Earth observation</span>
     </div>
   </footer>
 
   <script>
-    const menuButton = document.getElementById('mobile-menu-button');
+    const menuButton = document.getElementById('menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
 
     if (menuButton && mobileMenu) {
       menuButton.addEventListener('click', () => {
-        const isOpen = !mobileMenu.classList.contains('hidden');
-        mobileMenu.classList.toggle('hidden', isOpen);
-        menuButton.setAttribute('aria-expanded', String(!isOpen));
-        document.body.classList.toggle('menu-open', !isOpen);
+        const isOpen = mobileMenu.classList.toggle('is-open');
+        menuButton.classList.toggle('is-open', isOpen);
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        menuButton.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+        document.body.classList.toggle('menu-open', isOpen);
       });
 
-      mobileMenu.querySelectorAll('a').forEach(link => {
+      mobileMenu.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('is-open');
+          menuButton.classList.remove('is-open');
           menuButton.setAttribute('aria-expanded', 'false');
+          menuButton.setAttribute('aria-label', 'Open navigation');
           document.body.classList.remove('menu-open');
         });
       });
     }
-
-    window.addEventListener('load', () => {
-      if (window.feather) feather.replace();
-    });
 
     const year = document.getElementById('year');
     if (year) year.textContent = new Date().getFullYear();
