@@ -59,12 +59,12 @@
       --panel: #ffffff;
       --ink: #1f2a2e;
       --muted: #657174;
-      --line: #dedbd1;
-      --sage: #5f7464;
-      --teal: #276b73;
+      --line: #e7e1d7;
+      --sage: #617165;
+      --teal: #426f73;
       --clay: #9d6b4e;
       --sand: #eee8dc;
-      --shadow: 0 18px 46px rgba(31, 42, 46, 0.08);
+      --shadow: 0 12px 28px rgba(31, 42, 46, 0.055);
     }
 
     * { box-sizing: border-box; }
@@ -97,6 +97,12 @@
       text-decoration-color: var(--teal);
     }
 
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 4px;
+    }
+
     img {
       display: block;
       max-width: 100%;
@@ -113,7 +119,7 @@
       position: sticky;
       top: 0;
       z-index: 20;
-      background: rgba(251, 250, 246, 0.94);
+      background: rgba(251, 250, 246, 0.96);
       border-bottom: 1px solid var(--line);
       backdrop-filter: blur(14px);
     }
@@ -249,11 +255,9 @@
     }
 
     .hero {
-      padding: 5rem 0 4.5rem;
+      padding: 4rem 0 3.6rem;
       border-bottom: 1px solid var(--line);
-      background:
-        radial-gradient(circle at 18% 18%, rgba(39, 107, 115, .08), transparent 28%),
-        linear-gradient(180deg, #fbfaf6 0%, #f4efe6 100%);
+      background: #fbfaf6;
     }
 
     .hero-grid {
@@ -286,7 +290,7 @@
     h1 {
       max-width: 12ch;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(3rem, 8vw, 5.7rem);
+      font-size: clamp(2.8rem, 7vw, 5.15rem);
       font-weight: 500;
       letter-spacing: -.03em;
     }
@@ -322,13 +326,25 @@
       margin-top: 1.7rem;
     }
 
+    .hero-links {
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1.45rem;
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    .hero-links a {
+      text-decoration-thickness: 1px;
+    }
+
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       min-height: 2.75rem;
       border: 1px solid var(--line);
-      border-radius: 999px;
+      border-radius: 8px;
       padding: .68rem 1rem;
       background: var(--panel);
       color: var(--ink);
@@ -337,9 +353,9 @@
     }
 
     .button.primary {
-      border-color: var(--teal);
-      background: var(--teal);
-      color: white;
+      border-color: rgba(66, 111, 115, .28);
+      background: var(--panel);
+      color: var(--teal);
     }
 
     .portrait-card {
@@ -350,7 +366,7 @@
       border: 1px solid var(--line);
       border-radius: 50%;
       background: var(--panel);
-      box-shadow: 0 18px 44px rgba(31, 42, 46, 0.10);
+      box-shadow: var(--shadow);
       overflow: hidden;
       padding: .45rem;
     }
@@ -364,12 +380,12 @@
     }
 
     .section {
-      padding: 4.5rem 0;
+      padding: 4rem 0;
       border-bottom: 1px solid var(--line);
     }
 
     .section.alt {
-      background: #f6f2ea;
+      background: #f8f5ef;
     }
 
     .section-head {
@@ -382,7 +398,7 @@
 
     .section-label {
       color: var(--teal);
-      font-size: .82rem;
+      font-size: .78rem;
       font-weight: 850;
       letter-spacing: .14em;
       text-transform: uppercase;
@@ -391,7 +407,7 @@
     .section-title {
       max-width: 780px;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2rem, 4.2vw, 3.3rem);
+      font-size: clamp(1.65rem, 3.2vw, 2.45rem);
       font-weight: 500;
       letter-spacing: -.02em;
     }
@@ -416,6 +432,10 @@
     .quiet-note {
       color: var(--muted);
       font-size: .98rem;
+    }
+
+    .hero .quiet-note {
+      margin: .8rem 0 0;
     }
 
     .education-list {
@@ -447,13 +467,13 @@
     }
 
     .tag {
-      border: 1px solid rgba(39, 107, 115, .18);
+      border: 1px solid rgba(31, 42, 46, .10);
       border-radius: 999px;
-      background: rgba(255, 255, 255, .72);
-      color: var(--ink);
-      font-size: .92rem;
-      font-weight: 650;
-      padding: .42rem .72rem;
+      background: transparent;
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 600;
+      padding: .34rem .64rem;
     }
 
     .cards {
@@ -464,10 +484,10 @@
 
     .card {
       border: 1px solid var(--line);
-      border-radius: 16px;
+      border-radius: 12px;
       background: var(--panel);
       padding: 1.25rem;
-      box-shadow: 0 10px 28px rgba(31, 42, 46, .045);
+      box-shadow: none;
     }
 
     .card h3 {
@@ -481,28 +501,28 @@
       line-height: 1.6;
     }
 
+    .status {
+      display: inline-block;
+      margin-bottom: .72rem;
+      color: var(--clay);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
     .pillars {
       display: grid;
       gap: 1rem;
     }
 
     .pillar {
-      display: grid;
-      grid-template-columns: 2.5rem minmax(0, 1fr);
-      gap: 1rem;
-      padding: 1.25rem 0;
+      padding: 1.45rem 0;
       border-top: 1px solid var(--line);
     }
 
     .pillar-number {
-      display: grid;
-      width: 2.2rem;
-      height: 2.2rem;
-      place-items: center;
-      border-radius: 50%;
-      background: var(--sand);
-      color: var(--teal);
-      font-weight: 850;
+      display: none;
     }
 
     .publication-list,
@@ -535,10 +555,9 @@
     }
 
     .mission {
-      border: 1px solid rgba(39, 107, 115, .18);
-      border-radius: 20px;
-      background: #eef3ee;
-      padding: clamp(1.5rem, 4vw, 2.5rem);
+      border-left: 3px solid rgba(66, 111, 115, .36);
+      background: transparent;
+      padding: .25rem 0 .25rem 1.45rem;
     }
 
     .mission p {
@@ -546,8 +565,8 @@
       margin: 0;
       color: var(--ink);
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.35rem, 3vw, 2.05rem);
-      line-height: 1.45;
+      font-size: clamp(1.18rem, 2.2vw, 1.55rem);
+      line-height: 1.55;
     }
 
     .footer {
@@ -696,8 +715,7 @@
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#mission">Mission</a>
-          <a class="cv-link" href="Kwabena_Kingsley_Kumah_CV.pdf">CV</a>
-          <a href="#contact">Contact</a>
+          <a class="cv-link" href="Kwabena_Kingsley_Kumah_CV.pdf" target="_blank" rel="noopener">CV</a>
         </nav>
 
         <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><span class="menu-icon" aria-hidden="true"></span></button>
@@ -709,8 +727,7 @@
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#mission">Mission</a>
-        <a href="Kwabena_Kingsley_Kumah_CV.pdf">CV</a>
-        <a href="#contact">Contact</a>
+        <a href="Kwabena_Kingsley_Kumah_CV.pdf" target="_blank" rel="noopener">CV</a>
       </nav>
     </div>
   </header>
@@ -725,13 +742,12 @@
           <p class="affiliation">Department of Hydrology &amp; Atmospheric Sciences, University of Arizona</p>
           <p class="tagline">Remote sensing scientist developing and evaluating satellite-based precipitation and cryosphere records.</p>
 
-          <div class="button-row" aria-label="Profile links">
-            <a class="button primary" href="mailto:kkumah@arizona.edu">Email</a>
-            <a class="button" href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-            <a class="button" href="https://orcid.org/0000-0001-6865-0665" target="_blank" rel="noopener">ORCID</a>
-            <a class="button" href="https://github.com/king2coding" target="_blank" rel="noopener">GitHub</a>
-            <a class="button" href="Kwabena_Kingsley_Kumah_CV.pdf">CV</a>
+          <div class="button-row hero-links" aria-label="Profile links">
+            <a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="https://orcid.org/0000-0001-6865-0665" target="_blank" rel="noopener">ORCID</a>
+            <a href="Kwabena_Kingsley_Kumah_CV.pdf" target="_blank" rel="noopener">View CV</a>
           </div>
+          <p class="quiet-note">Email: <a href="mailto:kkumah@arizona.edu">kkumah@arizona.edu</a></p>
         </div>
 
         <aside class="portrait-card" aria-label="Profile portrait">
@@ -744,7 +760,7 @@
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">About</div>
-          <h2 class="section-title">A research profile centered on precipitation, satellites, and climate records.</h2>
+          <h2 class="section-title">Bio</h2>
         </div>
 
         <div class="content-grid">
@@ -756,8 +772,7 @@
             <p>Dr. Kumah completed doctoral work at the University of Twente / ITC, where he developed high-spatiotemporal rainfall estimation methods using commercial microwave link attenuation and MSG satellite observations. That earlier work focused on improving rainfall information in data-sparse regions in Africa, where gauges and weather radar networks are often limited.</p>
             <p>Across these efforts, his broader motivation is to improve precipitation information where observations are sparse, uncertain, or difficult to obtain.</p>
             <div class="button-row">
-              <a class="button" href="Kwabena_Kingsley_Kumah_CV.pdf">View CV</a>
-              <a class="button" href="#contact">Contact</a>
+              <a class="button" href="Kwabena_Kingsley_Kumah_CV.pdf" target="_blank" rel="noopener">View CV</a>
             </div>
           </div>
         </div>
@@ -806,33 +821,41 @@
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">Projects</div>
-          <h2 class="section-title">Featured work across satellite retrieval, validation, and data-sparse rainfall monitoring.</h2>
+          <h2 class="section-title">Recent Projects</h2>
         </div>
 
         <div class="cards">
           <article class="card">
+            <span class="status">Current</span>
             <h3>AVHRR High-Latitude Precipitation Retrieval</h3>
             <p>Development and diagnostic evaluation of AVHRR-based precipitation retrievals for high-latitude regions where conventional satellite precipitation estimates remain uncertain.</p>
           </article>
           <article class="card">
+            <span class="status">Current</span>
             <h3>AVHRR Limb-Darkening Correction</h3>
             <p>A physically informed correction framework for reducing scan-angle-related brightness-temperature bias in AVHRR infrared observations used for precipitation retrieval.</p>
           </article>
           <article class="card">
+            <span class="status">In preparation</span>
             <h3>Integrated Ocean Precipitation Evaluation</h3>
             <p>A multi-reference validation framework comparing GPCP, IMERG, ERA5, and MERRA-2 with PAL, moored buoys, atolls, and OceanRAIN across daily to climatological scales.</p>
           </article>
           <article class="card">
+            <span class="status">In preparation</span>
             <h3>Antarctic Snowfall Mass-Budget Benchmarking</h3>
             <p>A physically constrained assessment of Antarctic precipitation using GRACE-based storage change, ice discharge, basal melt, and sublimation inputs across IMBIE drainage basins.</p>
           </article>
           <article class="card">
+            <span class="status">Published / Dataset</span>
             <h3>GMASI Snow and Ice Cover Extension</h3>
             <p>A machine-learning extension of the Global Merged Analysis of Snow and Ice record back to 1980-1987 using ERA5-derived surface variables.</p>
+            <p><a href="https://doi.org/10.1029/2024EA004171" target="_blank" rel="noopener">Read publication</a> · <a href="https://doi.org/10.25422/azu.data.28012532.v1" target="_blank" rel="noopener">View dataset</a></p>
           </article>
           <article class="card">
+            <span class="status">Published / Applied research</span>
             <h3>CML-Satellite Rainfall Retrieval for Africa</h3>
             <p>Rainfall detection and mapping methods combining commercial microwave link attenuation with Meteosat cloud-top observations for data-sparse regions.</p>
+            <p><a href="https://doi.org/10.1016/j.atmosres.2022.106357" target="_blank" rel="noopener">Read publication</a></p>
           </article>
         </div>
       </div>
@@ -842,7 +865,7 @@
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">Research</div>
-          <h2 class="section-title">Three linked questions guide the work.</h2>
+          <h2 class="section-title">Research</h2>
         </div>
 
         <div class="pillars">
@@ -857,7 +880,7 @@
           <article class="pillar">
             <div class="pillar-number">2</div>
             <div class="prose">
-              <h3>Evaluating precipitation products across scales and observing regimes</h3>
+              <h3>Evaluating precipitation products across scales</h3>
               <p>His validation work compares products including GPCP, IMERG, ERA5, and MERRA-2 with independent references such as PAL, moored buoys, atolls, OceanRAIN, and Antarctic mass-budget constraints. The emphasis is on uncertainty-aware validation across daily, seasonal, and climatological scales.</p>
             </div>
           </article>
@@ -885,23 +908,23 @@
           <div>
             <ul class="publication-list">
               <li>
-                <strong>Kumah, K. K., Zandi, O., &amp; Behrangi, A. (2025).</strong>
+                <strong><b>Kumah, K. K.</b>, Zandi, O., &amp; Behrangi, A. (2025).</strong>
                 <span>Retrospective Mapping of Global Snow and Ice Cover Beyond the Satellite Observational Era. <em>Earth and Space Science.</em> <a href="https://doi.org/10.1029/2024EA004171" target="_blank" rel="noopener">DOI</a></span>
               </li>
               <li>
-                <strong>Kumah, K. K., Maathuis, B. H. P., Hoedjes, J. C. B., &amp; Su, Z. (2022).</strong>
+                <strong><b>Kumah, K. K.</b>, Maathuis, B. H. P., Hoedjes, J. C. B., &amp; Su, Z. (2022).</strong>
                 <span>Near real-time estimation of high spatiotemporal resolution rainfall from cloud-top properties of MSG and CML rainfall intensities. <em>Atmospheric Research.</em> <a href="https://doi.org/10.1016/j.atmosres.2022.106357" target="_blank" rel="noopener">DOI</a></span>
               </li>
               <li>
-                <strong>Kumah et al. (2021).</strong>
+                <strong><b>Kumah, K. K.</b>, et al. (2021).</strong>
                 <span>The MSG Technique. <em>Remote Sensing.</em> <a href="https://doi.org/10.3390/rs13163274" target="_blank" rel="noopener">DOI</a></span>
               </li>
               <li>
-                <strong>Kumah et al. (2021).</strong>
+                <strong><b>Kumah, K. K.</b>, et al. (2021).</strong>
                 <span>Rain Area Detection in South-Western Kenya. <em>Sensors.</em> <a href="https://doi.org/10.3390/s21103547" target="_blank" rel="noopener">DOI</a></span>
               </li>
               <li>
-                <strong>Kumah et al. (2020).</strong>
+                <strong><b>Kumah, K. K.</b>, et al. (2020).</strong>
                 <span>Combining MWL and MSG SEVIRI Satellite Signals. <em>Atmosphere.</em></span>
               </li>
               <li>
@@ -934,7 +957,7 @@
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">Mission</div>
-          <h2 class="section-title">Why this work matters.</h2>
+          <h2 class="section-title">Mission Statement</h2>
         </div>
         <div class="mission">
           <p>Precipitation is essential for weather, climate, water resources, agriculture, and hazard monitoring, but it remains difficult to measure over oceans, polar regions, complex terrain, and data-sparse regions. My work aims to improve the reliability, transparency, and usefulness of satellite precipitation and cryosphere records by combining physical understanding, machine learning, independent observations, and careful validation. The broader goal is to support better climate monitoring, hydrologic understanding, weather-risk assessment, and water-resource decision-making.</p>
@@ -964,7 +987,7 @@
 
             <div class="button-row">
               <a class="button primary" href="mailto:kkumah@arizona.edu?subject=Research%20collaboration%20inquiry">Email me</a>
-              <a class="button" href="Kwabena_Kingsley_Kumah_CV.pdf">Download CV</a>
+              <a class="button" href="Kwabena_Kingsley_Kumah_CV.pdf" target="_blank" rel="noopener">View CV</a>
             </div>
           </div>
         </div>
