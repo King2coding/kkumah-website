@@ -534,6 +534,7 @@
 
     .publication-list,
     .service-list,
+    .media-list,
     .contact-list {
       display: grid;
       gap: 1rem;
@@ -544,6 +545,7 @@
 
     .publication-list li,
     .service-list li,
+    .media-list li,
     .contact-list li {
       padding-bottom: 1rem;
       border-bottom: 1px solid rgba(222, 219, 209, .85);
@@ -555,10 +557,31 @@
     }
 
     .publication-list span,
-    .service-list span {
+    .service-list span,
+    .media-list span {
       display: block;
       margin-top: .25rem;
       color: var(--muted);
+    }
+
+    .subsection-title {
+      margin: 2rem 0 1rem;
+      font-size: 1.05rem;
+      letter-spacing: .01em;
+    }
+
+    .media-source {
+      display: block;
+      margin-bottom: .25rem;
+      color: var(--clay);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .media-list a {
+      font-weight: 750;
     }
 
     .mission {
@@ -952,13 +975,39 @@
 
     <section class="section" id="service">
       <div class="wrap content-grid">
-        <div class="section-label">Service / recognition</div>
-        <ul class="service-list">
-          <li>Peer reviewer for <span>Journal of Hydrometeorology, Hydrology and Earth System Sciences, Earth System Science Data, Remote Sensing, and JGR: Atmospheres</span></li>
-          <li>Swiss National Science Foundation <span>External proposal reviewer</span></li>
-          <li>COST Action SmartSense <span>Working Group 3 member</span></li>
-          <li>Media coverage <span>Research coverage related to mobile-phone network signals and rainfall monitoring</span></li>
-        </ul>
+        <div class="section-label">Service</div>
+        <div>
+          <h2 class="section-title">Service &amp; Recognition</h2>
+          <ul class="service-list">
+            <li>
+              <strong>Past peer-review contributions</strong>
+              <span>Completed manuscript reviews for journals including Journal of Hydrometeorology, Hydrology and Earth System Sciences, Earth System Science Data, Remote Sensing, and Journal of Geophysical Research: Atmospheres.</span>
+            </li>
+            <li>
+              <strong>Research community service</strong>
+              <span>External proposal review contribution for the Swiss National Science Foundation; Working Group 3 member, COST Action SmartSense.</span>
+            </li>
+          </ul>
+
+          <h3 class="subsection-title">Selected media and research features</h3>
+          <ul class="media-list">
+            <li>
+              <span class="media-source">APS Physics Magazine</span>
+              <a href="https://link.aps.org/doi/10.1103/Physics.14.161" target="_blank" rel="noopener">Mobile Phone Signals Hold Real-Time Rainfall Information</a>
+              <span>Feature article on the use of mobile-phone network signals for near-real-time rainfall monitoring, including discussion of Dr. Kumah's CML-satellite rainfall research.</span>
+            </li>
+            <li>
+              <span class="media-source">University of Twente / ITC</span>
+              <a href="https://www.utwente.nl/en/itc/news/2022/10/196298/itc-algorithm-detects-rainfall-in-rural-africa" target="_blank" rel="noopener">ITC algorithm detects rainfall in rural Africa</a>
+              <span>Institutional research feature on Dr. Kumah's machine-learning approach combining satellite observations and phone-signal rainfall information for rainfall estimation in data-sparse regions.</span>
+            </li>
+            <li>
+              <span class="media-source">TEMBO Africa</span>
+              <a href="https://www.temboafrica.eu/a-first-for-ghana-turning-mobile-phone-signals-into-near-real-time-rainfall-maps/" target="_blank" rel="noopener">A First for Ghana: Turning Mobile Phone Signals into Near-Real Time Rainfall Maps</a>
+              <span>Project article on CML-based near-real-time rainfall mapping in Ghana using mobile-network signals, satellite products, station observations, and machine-learning methods.</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
