@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
   <title>Dr. Kwabena Kingsley Kumah | Remote Sensing &amp; Precipitation Retrieval</title>
-  <meta name="description" content="Dr. Kwabena Kingsley Kumah is a remote sensing and precipitation retrieval scientist specializing in satellite algorithm development, precipitation-product evaluation, geospatial machine learning, uncertainty analysis, and climate-data records." />
+  <meta name="description" content="Dr. Kwabena Kingsley Kumah is a remote sensing and precipitation retrieval scientist and a member of the GPCP team recognized with the 2026 AGU Open Science Recognition Prize." />
   <link rel="canonical" href="https://king2coding.github.io/kkumah-website/" />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#f7f4ec" />
@@ -14,18 +14,19 @@
   <meta name="apple-mobile-web-app-title" content="Kumah Research" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon-192.jpg" type="image/jpeg" />
   <link rel="apple-touch-icon" href="icon-192.jpg" />
   <link rel="preload" as="image" href="profile.jpeg" />
 
   <meta property="og:title" content="Dr. Kwabena Kingsley Kumah | Remote Sensing &amp; Precipitation Retrieval" />
-  <meta property="og:description" content="Satellite precipitation retrieval, GPCP and IMERG evaluation, AVHRR high-latitude precipitation, ocean and polar precipitation validation, and geospatial machine learning." />
+  <meta property="og:description" content="Satellite precipitation retrieval, climate-data records, and membership in the GPCP team recognized with the 2026 AGU Open Science Recognition Prize." />
   <meta property="og:image" content="https://king2coding.github.io/kkumah-website/profile.jpeg" />
   <meta property="og:url" content="https://king2coding.github.io/kkumah-website/" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Dr. Kwabena Kingsley Kumah | Remote Sensing &amp; Earth Observation" />
-  <meta name="twitter:description" content="Remote sensing scientist developing and evaluating satellite-based precipitation and cryosphere records." />
+  <meta name="twitter:description" content="Remote sensing scientist developing and evaluating satellite-based precipitation and cryosphere records; member of the 2026 AGU-recognized GPCP team." />
   <meta name="twitter:image" content="https://king2coding.github.io/kkumah-website/profile.jpeg" />
 
   <script type="application/ld+json">
@@ -49,6 +50,10 @@
       "https://www.linkedin.com/in/kkumah/",
       "https://github.com/king2coding"
     ],
+    "award": [
+      "2026 AGU Open Science Recognition Prize — Global Precipitation Climatology Project team",
+      "Marquis Who's Who Honored Listee — Who's Who in America, 2025"
+    ],
     "description": "Remote sensing and precipitation retrieval scientist specializing in satellite algorithm development, precipitation-product evaluation, geospatial machine learning, uncertainty analysis, and climate-data records."
   }
   </script>
@@ -68,6 +73,25 @@
     }
 
     * { box-sizing: border-box; }
+
+    :focus-visible {
+      outline: 3px solid var(--teal);
+      outline-offset: 4px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: .75rem;
+      left: .75rem;
+      z-index: 1000;
+      padding: .65rem .9rem;
+      border-radius: .35rem;
+      background: var(--ink);
+      color: white;
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
 
     html { scroll-behavior: smooth; }
 
@@ -584,6 +608,44 @@
       font-weight: 750;
     }
 
+    .honors-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(260px, .8fr);
+      gap: 1rem;
+      align-items: stretch;
+    }
+
+    .honor-card {
+      padding: clamp(1.35rem, 3vw, 2rem);
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .honor-card.featured {
+      border-top: 4px solid var(--teal);
+      background: linear-gradient(135deg, #ffffff 0%, #f3f7f4 100%);
+    }
+
+    .honor-card.secondary { border-top: 4px solid var(--clay); }
+
+    .honor-year {
+      display: block;
+      margin-bottom: .7rem;
+      color: var(--clay);
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .honor-card h3 { margin: 0; font-size: clamp(1.15rem, 2vw, 1.45rem); }
+    .honor-card p { margin: .7rem 0 0; color: var(--muted); line-height: 1.65; }
+    .honor-org { color: var(--ink) !important; font-weight: 700; }
+    .honor-links { display: flex; flex-wrap: wrap; gap: .55rem 1rem; margin-top: 1rem; }
+    .honor-links a { font-weight: 750; }
+
     .mission {
       border-left: 3px solid rgba(66, 111, 115, .36);
       background: transparent;
@@ -653,6 +715,8 @@
       .cards {
         grid-template-columns: 1fr;
       }
+
+      .honors-grid { grid-template-columns: 1fr; }
 
       .button {
         flex: 1 1 auto;
@@ -731,6 +795,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="wrap">
       <div class="nav-bar">
@@ -741,6 +806,7 @@
 
         <nav class="nav-links" aria-label="Primary navigation">
           <a href="#about">About</a>
+          <a href="#honors">Honors</a>
           <a href="#projects">Projects</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
@@ -753,6 +819,7 @@
 
       <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
         <a href="#about">About</a>
+        <a href="#honors">Honors</a>
         <a href="#projects">Projects</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
@@ -762,7 +829,8 @@
     </div>
   </header>
 
-  <main id="top">
+  <main id="main-content">
+    <div id="top"></div>
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
@@ -846,7 +914,39 @@
       </div>
     </section>
 
-    <section class="section alt" id="projects">
+    <section class="section alt" id="honors">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-label">Honors</div>
+          <div>
+            <h2 class="section-title">Honors &amp; Recognition</h2>
+            <p class="section-subtitle">Selected team and professional recognition.</p>
+          </div>
+        </div>
+
+        <div class="honors-grid">
+          <article class="honor-card featured">
+            <span class="honor-year">Featured recognition · 2026</span>
+            <h3>AGU Open Science Recognition Prize</h3>
+            <p class="honor-org">Global Precipitation Climatology Project (GPCP) Team · American Geophysical Union</p>
+            <p>Member of the Global Precipitation Climatology Project team recognized by the American Geophysical Union with the 2026 Open Science Recognition Prize for long-term stewardship of open global precipitation data and trusted climate records.</p>
+            <div class="honor-links">
+              <a href="https://www.agu.org/user-profile?cstkey=942e1bed-464c-416a-8e3e-4249ec434ac8" target="_blank" rel="noopener">Official AGU recipient page</a>
+              <a href="https://has.arizona.edu/news/congratulations-has-professor-and-university-distinguished-scholar-ali-behrangi-recipient-2026" target="_blank" rel="noopener">University of Arizona announcement</a>
+            </div>
+          </article>
+
+          <article class="honor-card secondary">
+            <span class="honor-year">Professional recognition · 2025</span>
+            <h3>Marquis Who’s Who Honored Listee</h3>
+            <p class="honor-org">Who’s Who in America</p>
+            <p>Recognized as a 2025 honored listee.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">Projects</div>
@@ -893,7 +993,7 @@
       </div>
     </section>
 
-    <section class="section" id="research">
+    <section class="section alt" id="research">
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">Research</div>
@@ -928,7 +1028,7 @@
       </div>
     </section>
 
-    <section class="section alt" id="publications">
+    <section class="section" id="publications">
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">Publications</div>
@@ -973,11 +1073,11 @@
       </div>
     </section>
 
-    <section class="section" id="service">
+    <section class="section alt" id="service">
       <div class="wrap content-grid">
         <div class="section-label">Service</div>
         <div>
-          <h2 class="section-title">Service &amp; Recognition</h2>
+          <h2 class="section-title">Professional Service</h2>
           <ul class="service-list">
             <li>
               <strong>Past peer-review contributions</strong>
@@ -1011,7 +1111,7 @@
       </div>
     </section>
 
-    <section class="section alt" id="mission">
+    <section class="section" id="mission">
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">Mission</div>
@@ -1023,7 +1123,7 @@
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="section alt" id="contact">
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">Contact</div>
