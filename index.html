@@ -457,6 +457,28 @@
       margin: 0 0 1.05rem;
     }
 
+    .research-visual {
+      margin: 2.4rem 0 0;
+    }
+
+    .research-visual img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      padding: .35rem;
+    }
+
+    .research-visual figcaption {
+      max-width: 820px;
+      margin: .8rem auto 0;
+      color: var(--muted);
+      font-size: .92rem;
+      text-align: center;
+    }
+
     .quiet-note {
       color: var(--muted);
       font-size: .98rem;
@@ -583,6 +605,39 @@
       display: block;
       margin-top: .25rem;
       color: var(--muted);
+    }
+
+    .manuscript-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .manuscript-card {
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--teal);
+      border-radius: 12px;
+      background: var(--panel);
+      padding: 1.25rem;
+    }
+
+    .manuscript-card h3 {
+      font-size: 1.08rem;
+      line-height: 1.35;
+    }
+
+    .manuscript-card p {
+      margin: .7rem 0 0;
+      color: var(--muted);
+      font-size: .93rem;
+      line-height: 1.55;
+    }
+
+    .manuscript-note {
+      margin: -1rem 0 1.35rem;
+      color: var(--muted);
+      font-size: .95rem;
     }
 
     .subsection-title {
@@ -720,6 +775,10 @@
         grid-template-columns: 1fr;
       }
 
+      .manuscript-grid {
+        grid-template-columns: 1fr;
+      }
+
       .honors-grid { grid-template-columns: 1fr; }
 
       .button {
@@ -842,7 +901,7 @@
           <h1>Kwabena Kingsley Kumah</h1>
           <p class="role">Postdoctoral Research Associate</p>
           <p class="affiliation">Department of Hydrology &amp; Atmospheric Sciences, University of Arizona</p>
-          <p class="tagline">Remote sensing scientist developing and evaluating satellite-based precipitation and cryosphere records.</p>
+          <p class="tagline">Satellite precipitation retrieval and evaluation across oceans, polar regions, and data-sparse environments.</p>
 
           <div class="button-row hero-links" aria-label="Profile links">
             <a href="https://scholar.google.com/citations?user=gDm8q-QAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
@@ -867,16 +926,19 @@
         <div class="content-grid">
           <div class="quiet-note">Bio</div>
           <div class="prose">
-            <p>Dr. Kwabena Kingsley Kumah is a remote sensing and precipitation retrieval scientist specializing in satellite algorithm development, precipitation-product evaluation, geospatial machine learning, uncertainty analysis, and climate-data records.</p>
-            <p>He is currently a Postdoctoral Research Associate in the Department of Hydrology &amp; Atmospheric Sciences at the University of Arizona, where he contributes to NASA-supported precipitation research relevant to GPCP, IMERG, AVHRR-based high-latitude precipitation retrieval, ocean precipitation evaluation, polar precipitation benchmarking, and satellite/reanalysis product validation.</p>
-            <p>His current work includes AVHRR infrared retrievals, diagnostic evaluation of satellite precipitation products, uncertainty-aware validation, and applications in ocean and polar precipitation. This research addresses environments where precipitation is difficult to observe directly and where satellite records must be carefully interpreted.</p>
-            <p>Dr. Kumah completed doctoral work at the University of Twente / ITC, where he developed high-spatiotemporal rainfall estimation methods using commercial microwave link attenuation and MSG satellite observations. That earlier work focused on improving rainfall information in data-sparse regions in Africa, where gauges and weather radar networks are often limited.</p>
-            <p>Across these efforts, his broader motivation is to improve precipitation information where observations are sparse, uncertain, or difficult to obtain.</p>
+            <p>Dr. Kwabena Kingsley Kumah is a remote sensing scientist whose research focuses on retrieving, evaluating, and extending satellite precipitation and cryosphere records. As a Postdoctoral Research Associate at the University of Arizona, he contributes to NASA-supported work on GPCP, passive-microwave and infrared precipitation retrievals, and the evaluation of satellite and reanalysis products.</p>
+            <p>His current research combines algorithm development with independent, uncertainty-aware evaluation. It includes multi-reference assessment of ocean precipitation products, observation-constrained estimates of Antarctic snowfall, comparison of GPROF retrieval versions over the United States, and development of AVHRR-based methods for high-latitude precipitation. Across these projects, he examines where precipitation products agree, where they diverge, and how their limitations depend on scale, surface conditions, and observing system.</p>
+            <p>Dr. Kumah earned his Ph.D. at the University of Twente / ITC, where he developed rainfall-estimation methods that combined commercial microwave-link attenuation with Meteosat observations. This work in Africa established the broader thread connecting his research: improving precipitation information in regions and environments where conventional observations are sparse or difficult to obtain.</p>
             <div class="button-row">
               <a class="button" href="Kwabena_Kingsley_Kumah_CV.pdf" target="_blank" rel="noopener">View CV</a>
             </div>
           </div>
         </div>
+
+        <figure class="research-visual">
+          <img src="gpcp-global-precipitation-map.png" alt="Global map showing the spatial distribution of precipitation, with wetter tropical and storm-track regions and drier subtropical and polar regions" width="2029" height="1032" loading="lazy" />
+          <figcaption>A global precipitation visualization prepared in support of collaborative GPCP team work.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -973,12 +1035,12 @@
             <p>A physically informed correction framework for reducing scan-angle-related brightness-temperature bias in AVHRR infrared observations used for precipitation retrieval.</p>
           </article>
           <article class="card">
-            <span class="status">In preparation</span>
+            <span class="status">Manuscript submitted</span>
             <h3>Integrated Ocean Precipitation Evaluation</h3>
             <p>A multi-reference validation framework comparing GPCP, IMERG, ERA5, and MERRA-2 with PAL, moored buoys, atolls, and OceanRAIN across daily to climatological scales.</p>
           </article>
           <article class="card">
-            <span class="status">In preparation</span>
+            <span class="status">Manuscript submitted</span>
             <h3>Antarctic Snowfall Mass-Budget Benchmarking</h3>
             <p>A physically constrained assessment of Antarctic precipitation using GRACE-based storage change, ice discharge, basal melt, and sublimation inputs across IMBIE drainage basins.</p>
           </article>
@@ -1037,11 +1099,33 @@
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">Publications</div>
-          <h2 class="section-title">Selected publications and data products.</h2>
+          <div>
+            <h2 class="section-title">Current manuscripts and selected publications</h2>
+            <p class="section-subtitle">Recent work in review is clearly separated from peer-reviewed publications and data products.</p>
+          </div>
+        </div>
+
+        <p class="manuscript-note">Manuscript titles and status are current as of October 2026; journal and DOI details will be added only after they are publicly available.</p>
+        <div class="manuscript-grid" aria-label="Current manuscripts">
+          <article class="manuscript-card">
+            <span class="status">Submitted · 2026</span>
+            <h3>Quantifying Antarctic Snowfall Accumulation Using the Latest Ice Discharge and Spaceborne Gravity Observations: Comparison with Reanalysis and Satellite Precipitation Products</h3>
+            <p>Kumah, K. K., Behrangi, A., Zandi, O., Gardner, A. S., Wiese, D. N., &amp; Greene, C. A. Manuscript submitted.</p>
+          </article>
+          <article class="manuscript-card">
+            <span class="status">Submitted · 2026</span>
+            <h3>A Multi-Reference Assessment of Ocean Precipitation Products by Integrating PAL, Buoys, Atolls, and OceanRAIN</h3>
+            <p>Kumah, K. K., Behrangi, A., Huffman, G. J., Adler, R. F., Gu, G., Song, Y., Zandi, O., Bolvin, D. T., Nelkin, E. J., Funk, C. C., &amp; Peterson, P. Manuscript submitted.</p>
+          </article>
+          <article class="manuscript-card">
+            <span class="status">Internal review · 2026</span>
+            <h3>Evaluating Changes from GPROF Version 7 to Version 8 GMI Precipitation Retrievals over the Contiguous United States</h3>
+            <p>Kumah, K. K., Zandi, O., &amp; Behrangi, A. Manuscript in internal review prior to submission.</p>
+          </article>
         </div>
 
         <div class="content-grid">
-          <div class="quiet-note">Selected work</div>
+          <div class="quiet-note">Peer-reviewed work</div>
           <div>
             <ul class="publication-list">
               <li>
