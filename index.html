@@ -471,14 +471,6 @@
       padding: .35rem;
     }
 
-    .research-visual figcaption {
-      max-width: 820px;
-      margin: .8rem auto 0;
-      color: var(--muted);
-      font-size: .92rem;
-      text-align: center;
-    }
-
     .quiet-note {
       color: var(--muted);
       font-size: .98rem;
@@ -605,39 +597,6 @@
       display: block;
       margin-top: .25rem;
       color: var(--muted);
-    }
-
-    .manuscript-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .manuscript-card {
-      border: 1px solid var(--line);
-      border-top: 3px solid var(--teal);
-      border-radius: 12px;
-      background: var(--panel);
-      padding: 1.25rem;
-    }
-
-    .manuscript-card h3 {
-      font-size: 1.08rem;
-      line-height: 1.35;
-    }
-
-    .manuscript-card p {
-      margin: .7rem 0 0;
-      color: var(--muted);
-      font-size: .93rem;
-      line-height: 1.55;
-    }
-
-    .manuscript-note {
-      margin: -1rem 0 1.35rem;
-      color: var(--muted);
-      font-size: .95rem;
     }
 
     .subsection-title {
@@ -772,10 +731,6 @@
       }
 
       .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .manuscript-grid {
         grid-template-columns: 1fr;
       }
 
@@ -936,8 +891,7 @@
         </div>
 
         <figure class="research-visual">
-          <img src="gpcp-global-precipitation-map.png" alt="Global map showing the spatial distribution of precipitation, with wetter tropical and storm-track regions and drier subtropical and polar regions" width="2029" height="1032" loading="lazy" />
-          <figcaption>A global precipitation visualization prepared in support of collaborative GPCP team work.</figcaption>
+          <img src="gpcp-v3.3-climatology.svg" alt="GPCP Version 3.3 global surface precipitation climatology for 1992 through 2023, with a discrete legend in millimeters per day" width="2365" height="1560" loading="lazy" />
         </figure>
       </div>
     </section>
@@ -1099,34 +1053,28 @@
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">Publications</div>
-          <div>
-            <h2 class="section-title">Current manuscripts and selected publications</h2>
-            <p class="section-subtitle">Recent work in review is clearly separated from peer-reviewed publications and data products.</p>
-          </div>
-        </div>
-
-        <p class="manuscript-note">Manuscript titles and status are current as of October 2026; journal and DOI details will be added only after they are publicly available.</p>
-        <div class="manuscript-grid" aria-label="Current manuscripts">
-          <article class="manuscript-card">
-            <span class="status">Submitted · 2026</span>
-            <h3>Quantifying Antarctic Snowfall Accumulation Using the Latest Ice Discharge and Spaceborne Gravity Observations: Comparison with Reanalysis and Satellite Precipitation Products</h3>
-            <p>Kumah, K. K., Behrangi, A., Zandi, O., Gardner, A. S., Wiese, D. N., &amp; Greene, C. A. Manuscript submitted.</p>
-          </article>
-          <article class="manuscript-card">
-            <span class="status">Submitted · 2026</span>
-            <h3>A Multi-Reference Assessment of Ocean Precipitation Products by Integrating PAL, Buoys, Atolls, and OceanRAIN</h3>
-            <p>Kumah, K. K., Behrangi, A., Huffman, G. J., Adler, R. F., Gu, G., Song, Y., Zandi, O., Bolvin, D. T., Nelkin, E. J., Funk, C. C., &amp; Peterson, P. Manuscript submitted.</p>
-          </article>
-          <article class="manuscript-card">
-            <span class="status">Internal review · 2026</span>
-            <h3>Evaluating Changes from GPROF Version 7 to Version 8 GMI Precipitation Retrievals over the Contiguous United States</h3>
-            <p>Kumah, K. K., Zandi, O., &amp; Behrangi, A. Manuscript in internal review prior to submission.</p>
-          </article>
+          <h2 class="section-title">Current manuscripts and selected publications</h2>
         </div>
 
         <div class="content-grid">
-          <div class="quiet-note">Peer-reviewed work</div>
+          <div class="quiet-note">Submitted and in-review manuscripts</div>
           <div>
+            <ul class="publication-list">
+              <li>
+                <strong><b>Kumah, K. K.</b>, Behrangi, A., Zandi, O., Gardner, A. S., Wiese, D. N., &amp; Greene, C. A. (2026).</strong>
+                <span>Quantifying Antarctic Snowfall Accumulation Using the Latest Ice Discharge and Spaceborne Gravity Observations: Comparison with Reanalysis and Satellite Precipitation Products. <em>Manuscript submitted.</em></span>
+              </li>
+              <li>
+                <strong><b>Kumah, K. K.</b>, Behrangi, A., Huffman, G. J., Adler, R. F., Gu, G., Song, Y., Zandi, O., Bolvin, D. T., Nelkin, E. J., Funk, C. C., &amp; Peterson, P. (2026).</strong>
+                <span>A Multi-Reference Assessment of Ocean Precipitation Products by Integrating PAL, Buoys, Atolls, and OceanRAIN. <em>Manuscript submitted.</em></span>
+              </li>
+              <li>
+                <strong><b>Kumah, K. K.</b>, Zandi, O., &amp; Behrangi, A. (2026).</strong>
+                <span>Evaluating Changes from GPROF Version 7 to Version 8 GMI Precipitation Retrievals over the Contiguous United States. <em>Manuscript in internal review prior to submission.</em></span>
+              </li>
+            </ul>
+
+            <h3 class="subsection-title">Peer-reviewed work</h3>
             <ul class="publication-list">
               <li>
                 <strong><b>Kumah, K. K.</b>, Zandi, O., &amp; Behrangi, A. (2025).</strong>
