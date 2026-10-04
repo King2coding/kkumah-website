@@ -461,7 +461,9 @@
       margin: 2.4rem 0 0;
     }
 
-    .research-visual img {
+    .research-visual img,
+    .research-visual svg {
+      display: block;
       width: 100%;
       height: auto;
       border-radius: 14px;
@@ -576,6 +578,10 @@
       margin: 0;
       padding: 0;
       list-style: none;
+    }
+
+    .publication-group {
+      margin-top: 2rem;
     }
 
     .publication-list li,
@@ -891,7 +897,18 @@
         </div>
 
         <figure class="research-visual">
-          <img src="gpcp-v3.3-climatology.svg" alt="GPCP Version 3.3 global surface precipitation climatology for 1992 through 2023, with a discrete legend in millimeters per day" width="2365" height="1560" loading="lazy" />
+          <svg viewBox="0 0 2365 1560" role="img" aria-labelledby="gpcp-map-title gpcp-map-description">
+            <title id="gpcp-map-title">GPCP V3.3 Global Surface Precipitation Climatology</title>
+            <desc id="gpcp-map-description">Total liquid and frozen precipitation climatology for January 1992 through December 2023 on a 288 by 180 grid, with a discrete legend in millimeters per day.</desc>
+            <defs>
+              <clipPath id="gpcp-title-block"><rect width="2365" height="165" /></clipPath>
+              <clipPath id="gpcp-map-and-legend"><rect y="165" width="2365" height="1395" /></clipPath>
+            </defs>
+            <rect width="2365" height="1560" fill="#ffffff" />
+            <image href="gpcp-v3.3-climatology-source.png" width="2365" height="1670" clip-path="url(#gpcp-title-block)" />
+            <image href="gpcp-v3.3-climatology-source.png" y="-110" width="2365" height="1670" clip-path="url(#gpcp-map-and-legend)" />
+            <rect x="145" y="1060" width="190" height="125" fill="#ffffff" />
+          </svg>
         </figure>
       </div>
     </section>
@@ -1073,8 +1090,12 @@
                 <span>Evaluating Changes from GPROF Version 7 to Version 8 GMI Precipitation Retrievals over the Contiguous United States. <em>Manuscript in internal review prior to submission.</em></span>
               </li>
             </ul>
+          </div>
+        </div>
 
-            <h3 class="subsection-title">Peer-reviewed work</h3>
+        <div class="content-grid publication-group">
+          <div class="quiet-note">Peer-reviewed work</div>
+          <div>
             <ul class="publication-list">
               <li>
                 <strong><b>Kumah, K. K.</b>, Zandi, O., &amp; Behrangi, A. (2025).</strong>
